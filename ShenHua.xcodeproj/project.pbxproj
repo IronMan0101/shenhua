@@ -89,8 +89,6 @@
 		FCA9EA501E37312F00FF677C /* UITableViewCaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCA9E9E41E37312F00FF677C /* UITableViewCaseCell.xib */; };
 		FCA9EA511E37312F00FF677C /* UITableViewCaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E9E61E37312F00FF677C /* UITableViewCaseVC.m */; };
 		FCA9EA521E37313000FF677C /* UITableViewCaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCA9E9E71E37312F00FF677C /* UITableViewCaseVC.xib */; };
-		FCA9EA531E37313000FF677C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E9E91E37312F00FF677C /* TestViewController.m */; };
-		FCA9EA541E37313000FF677C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCA9E9EA1E37312F00FF677C /* TestViewController.xib */; };
 		FCA9EA551E37313000FF677C /* 备份.md in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E9EB1E37312F00FF677C /* 备份.md */; };
 		FCA9EA561E37313000FF677C /* 审核.md in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E9EC1E37312F00FF677C /* 审核.md */; };
 		FCA9EA571E37313000FF677C /* 工作.md in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E9ED1E37312F00FF677C /* 工作.md */; };
@@ -242,9 +240,6 @@
 		FCA9E9E51E37312F00FF677C /* UITableViewCaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCaseVC.h; sourceTree = "<group>"; };
 		FCA9E9E61E37312F00FF677C /* UITableViewCaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewCaseVC.m; sourceTree = "<group>"; };
 		FCA9E9E71E37312F00FF677C /* UITableViewCaseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITableViewCaseVC.xib; sourceTree = "<group>"; };
-		FCA9E9E81E37312F00FF677C /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = ../Genneral/KnowIOS/TestViewController.h; sourceTree = "<group>"; };
-		FCA9E9E91E37312F00FF677C /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = ../Genneral/KnowIOS/TestViewController.m; sourceTree = "<group>"; };
-		FCA9E9EA1E37312F00FF677C /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestViewController.xib; path = ../Genneral/KnowIOS/TestViewController.xib; sourceTree = "<group>"; };
 		FCA9E9EB1E37312F00FF677C /* 备份.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "备份.md"; sourceTree = "<group>"; };
 		FCA9E9EC1E37312F00FF677C /* 审核.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "审核.md"; sourceTree = "<group>"; };
 		FCA9E9ED1E37312F00FF677C /* 工作.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "工作.md"; sourceTree = "<group>"; };
@@ -389,9 +384,6 @@
 		FCA9E8061E372F6A00FF677C /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				FCA9E9E81E37312F00FF677C /* TestViewController.h */,
-				FCA9E9E91E37312F00FF677C /* TestViewController.m */,
-				FCA9E9EA1E37312F00FF677C /* TestViewController.xib */,
 				751707CD1B4620F6007F1AE2 /* AppDelegate.h */,
 				751707CE1B4620F6007F1AE2 /* AppDelegate.m */,
 			);
@@ -836,7 +828,6 @@
 				FCA9EA191E37312F00FF677C /* AboutVC.xib in Resources */,
 				751707D71B4620F6007F1AE2 /* Images.xcassets in Resources */,
 				FCA9EA4A1E37312F00FF677C /* Masonry.jpg in Resources */,
-				FCA9EA541E37313000FF677C /* TestViewController.xib in Resources */,
 				FCA9EA221E37312F00FF677C /* 微信-发现.jpg in Resources */,
 				FCA9EA3D1E37312F00FF677C /* cgf_classification_open@2x.png in Resources */,
 				FCA9EA1D1E37312F00FF677C /* LicensePageVC.xib in Resources */,
@@ -914,7 +905,6 @@
 				FCA9EA2F1E37312F00FF677C /* TwoVC.m in Sources */,
 				FCA9EA311E37312F00FF677C /* CacheManager.m in Sources */,
 				FCA9EA051E37312F00FF677C /* BaseNavigationController.m in Sources */,
-				FCA9EA531E37313000FF677C /* TestViewController.m in Sources */,
 				FCA9EA481E37312F00FF677C /* AutoLayoutCaseVC.m in Sources */,
 				FCA9EA581E37313000FF677C /* 工具.md in Sources */,
 				FCA9EA601E37313000FF677C /* Tool.m in Sources */,

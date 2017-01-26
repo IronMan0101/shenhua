@@ -30,6 +30,9 @@
 #define PHONENUMBER_TAG         999                                        //默认打开电话的标签
 #define BASEVIEWCOLOR           RGB(248,248,248)                           //所有继承view的基础颜色
 #define WeakSelf(weakSelf)      __weak __typeof(&*self)weakSelf = self;    //获取弱引用self
+#define DEGREES_TO_RADIANS(d)  ((d) * M_PI / 180.0)
+#define RADIANS_TO_DEGREES(r)  ((d) * 180.0 / M_PI)
+
 
 
 
