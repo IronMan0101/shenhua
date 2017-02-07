@@ -43,8 +43,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    //self.window.rootViewController = [self creatTestController];
-     self.window.rootViewController = [self creatMainController:0];
+    self.window.rootViewController = [self creatTestController];
+    // self.window.rootViewController = [self creatMainController:0];
      [self.window makeKeyAndVisible];
     
 //    SDGuideViewController *guideVC=[[SDGuideViewController alloc] initWithNibName:@"SDGuideViewController" bundle:nil];
@@ -54,6 +54,8 @@
    // [guideVC showOnWindow];
     
    // self.window.rootViewController = guideVC;
+    
+  
     
 
    
@@ -84,7 +86,7 @@
  */
 - (UIViewController *)creatTestController
 {
-   // TestViewController * testVC=[[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
+   TestViewController * testVC=[[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
    // CustomViewCaseController * testVC=[[CustomViewCaseController alloc] initWithNibName:@"CustomViewCaseController" bundle:nil];
    // MasonryCaseVC * testVC=[[MasonryCaseVC alloc] initWithNibName:@"MasonryCaseVC" bundle:nil];
    // AutoLayoutCaseVC  * testVC=[[AutoLayoutCaseVC alloc] initWithNibName:@"AutoLayoutCaseVC" bundle:nil];
@@ -98,7 +100,7 @@
    // LicensePageVC* testVC=[[LicensePageVC alloc] initWithNibName:@"LicensePageVC" bundle:nil];//关于开源组件页面
     
     
-    HubViewCaseVC* testVC=[[HubViewCaseVC alloc] initWithNibName:@"HubViewCaseVC" bundle:nil];
+   // HubViewCaseVC* testVC=[[HubViewCaseVC alloc] initWithNibName:@"HubViewCaseVC" bundle:nil];
     
     
     return  testVC;

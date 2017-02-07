@@ -10,6 +10,16 @@
 		751707CC1B4620F6007F1AE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 751707CB1B4620F6007F1AE2 /* main.m */; };
 		751707CF1B4620F6007F1AE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 751707CE1B4620F6007F1AE2 /* AppDelegate.m */; };
 		751707D71B4620F6007F1AE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751707D61B4620F6007F1AE2 /* Images.xcassets */; };
+		759DDABE1E40410400175959 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 759DDABD1E40410300175959 /* README.md */; };
+		759DDAC71E40C91100175959 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DDAC51E40C91100175959 /* TestViewController.m */; };
+		759DDAC81E40C91100175959 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759DDAC61E40C91100175959 /* TestViewController.xib */; };
+		759DDADA1E45C50800175959 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 759DDAD91E45C50800175959 /* test@2x.png */; };
+		759DDADE1E4706FF00175959 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DDADC1E4706FF00175959 /* Test2ViewController.m */; };
+		759DDADF1E4706FF00175959 /* Test2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759DDADD1E4706FF00175959 /* Test2ViewController.xib */; };
+		759DDAE21E47085F00175959 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DDAE11E47085F00175959 /* CustomView.m */; };
+		759DDAE41E47086E00175959 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759DDAE31E47086E00175959 /* CustomView.xib */; };
+		759DDAE71E470CDB00175959 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DDAE61E470CDB00175959 /* Person.m */; };
+		759DDAEA1E470FA000175959 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DDAE91E470FA000175959 /* Dog.m */; };
 		B167EBF62991D7C480AEFD25 /* libPods-ShenHua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A55C993E31166E5D9B3031 /* libPods-ShenHua.a */; };
 		FC5F6F611C8987390023AEAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5F6F601C8987390023AEAF /* CoreLocation.framework */; };
 		FCA9EA051E37312F00FF677C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E95A1E37312F00FF677C /* BaseNavigationController.m */; };
@@ -114,6 +124,21 @@
 		751707D61B4620F6007F1AE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		751707E41B4620F6007F1AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		751707E51B4620F6007F1AE2 /* ShenHuaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShenHuaTests.m; sourceTree = "<group>"; };
+		759DDABD1E40410300175959 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		759DDAC41E40C91100175959 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = ShenHua/TestViewController.h; sourceTree = SOURCE_ROOT; };
+		759DDAC51E40C91100175959 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = ShenHua/TestViewController.m; sourceTree = SOURCE_ROOT; };
+		759DDAC61E40C91100175959 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestViewController.xib; path = ShenHua/TestViewController.xib; sourceTree = SOURCE_ROOT; };
+		759DDAD91E45C50800175959 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
+		759DDADB1E4706FF00175959 /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test2ViewController.h; path = ShenHua/Test2ViewController.h; sourceTree = SOURCE_ROOT; };
+		759DDADC1E4706FF00175959 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test2ViewController.m; path = ShenHua/Test2ViewController.m; sourceTree = SOURCE_ROOT; };
+		759DDADD1E4706FF00175959 /* Test2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Test2ViewController.xib; path = ShenHua/Test2ViewController.xib; sourceTree = SOURCE_ROOT; };
+		759DDAE01E47085F00175959 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = ShenHua/CustomView.h; sourceTree = SOURCE_ROOT; };
+		759DDAE11E47085F00175959 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = ShenHua/CustomView.m; sourceTree = SOURCE_ROOT; };
+		759DDAE31E47086E00175959 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomView.xib; path = ShenHua/CustomView.xib; sourceTree = SOURCE_ROOT; };
+		759DDAE51E470CDB00175959 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ShenHua/Person.h; sourceTree = SOURCE_ROOT; };
+		759DDAE61E470CDB00175959 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ShenHua/Person.m; sourceTree = SOURCE_ROOT; };
+		759DDAE81E470FA000175959 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dog.h; path = ShenHua/Dog.h; sourceTree = SOURCE_ROOT; };
+		759DDAE91E470FA000175959 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dog.m; path = ShenHua/Dog.m; sourceTree = SOURCE_ROOT; };
 		75D9A8901B4E966900C4CB34 /* ShenHua-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShenHua-Prefix.pch"; sourceTree = "<group>"; };
 		8614D95EDFFC612247624D9D /* Pods-ShenHua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShenHua.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShenHua/Pods-ShenHua.debug.xcconfig"; sourceTree = "<group>"; };
 		FC5F6F601C8987390023AEAF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -384,8 +409,22 @@
 		FCA9E8061E372F6A00FF677C /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				759DDABD1E40410300175959 /* README.md */,
 				751707CD1B4620F6007F1AE2 /* AppDelegate.h */,
 				751707CE1B4620F6007F1AE2 /* AppDelegate.m */,
+				759DDAC41E40C91100175959 /* TestViewController.h */,
+				759DDAC51E40C91100175959 /* TestViewController.m */,
+				759DDAC61E40C91100175959 /* TestViewController.xib */,
+				759DDADB1E4706FF00175959 /* Test2ViewController.h */,
+				759DDADC1E4706FF00175959 /* Test2ViewController.m */,
+				759DDADD1E4706FF00175959 /* Test2ViewController.xib */,
+				759DDAE01E47085F00175959 /* CustomView.h */,
+				759DDAE11E47085F00175959 /* CustomView.m */,
+				759DDAE31E47086E00175959 /* CustomView.xib */,
+				759DDAE51E470CDB00175959 /* Person.h */,
+				759DDAE61E470CDB00175959 /* Person.m */,
+				759DDAE81E470FA000175959 /* Dog.h */,
+				759DDAE91E470FA000175959 /* Dog.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -393,6 +432,7 @@
 		FCA9E8071E372F6A00FF677C /* Genneral */ = {
 			isa = PBXGroup;
 			children = (
+				759DDAD91E45C50800175959 /* test@2x.png */,
 				FCA9E9571E37312F00FF677C /* Base */,
 				FCA9E9651E37312F00FF677C /* Category */,
 				FCA9E97F1E37312F00FF677C /* Control */,
@@ -818,11 +858,14 @@
 				FCA9EA5E1E37313000FF677C /* OSLicense.html in Resources */,
 				FCA9EA371E37312F00FF677C /* CustomViewCaseController.xib in Resources */,
 				FCA9EA4C1E37312F00FF677C /* MasonryCaseVC.xib in Resources */,
+				759DDAE41E47086E00175959 /* CustomView.xib in Resources */,
 				FCA9EA1B1E37312F00FF677C /* FeedBackVC.xib in Resources */,
+				759DDADA1E45C50800175959 /* test@2x.png in Resources */,
 				FCA9EA501E37312F00FF677C /* UITableViewCaseCell.xib in Resources */,
 				FCA9EA351E37312F00FF677C /* AnimCaseVC.xib in Resources */,
 				FCA9EA441E37312F00FF677C /* autolayout1.png in Resources */,
 				FCA9EA3E1E37312F00FF677C /* cgf_classification_open@3x.png in Resources */,
+				759DDAC81E40C91100175959 /* TestViewController.xib in Resources */,
 				FCA9EA421E37312F00FF677C /* HubViewCaseVC.xib in Resources */,
 				FCA9EA451E37312F00FF677C /* autolayout2.png in Resources */,
 				FCA9EA191E37312F00FF677C /* AboutVC.xib in Resources */,
@@ -830,6 +873,7 @@
 				FCA9EA4A1E37312F00FF677C /* Masonry.jpg in Resources */,
 				FCA9EA221E37312F00FF677C /* 微信-发现.jpg in Resources */,
 				FCA9EA3D1E37312F00FF677C /* cgf_classification_open@2x.png in Resources */,
+				759DDADF1E4706FF00175959 /* Test2ViewController.xib in Resources */,
 				FCA9EA1D1E37312F00FF677C /* LicensePageVC.xib in Resources */,
 				FCA9EA301E37312F00FF677C /* TwoVC.xib in Resources */,
 				FCA9EA281E37312F00FF677C /* LoginViewController.xib in Resources */,
@@ -894,6 +938,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759DDAE71E470CDB00175959 /* Person.m in Sources */,
 				FCA9EA561E37313000FF677C /* 审核.md in Sources */,
 				FCA9EA5D1E37313000FF677C /* 逆向.md in Sources */,
 				FCA9EA2B1E37312F00FF677C /* OneVC.m in Sources */,
@@ -911,6 +956,7 @@
 				FCA9EA121E37312F00FF677C /* UILabel+SDCategory.m in Sources */,
 				751707CF1B4620F6007F1AE2 /* AppDelegate.m in Sources */,
 				FCA9EA341E37312F00FF677C /* AnimCaseVC.m in Sources */,
+				759DDAEA1E470FA000175959 /* Dog.m in Sources */,
 				FCA9EA071E37312F00FF677C /* BaseTableViewController.m in Sources */,
 				FCA9EA081E37312F00FF677C /* BaseViewController.m in Sources */,
 				FCA9EA321E37312F00FF677C /* DBTool.m in Sources */,
@@ -919,6 +965,7 @@
 				FCA9EA0C1E37312F00FF677C /* NSObject+SDCategory.m in Sources */,
 				FCA9EA101E37312F00FF677C /* UIImage+SDCategory.m in Sources */,
 				FCA9EA1E1E37312F00FF677C /* FiveVC.m in Sources */,
+				759DDAE21E47085F00175959 /* CustomView.m in Sources */,
 				FCA9EA0E1E37312F00FF677C /* UIButton+SDCategory.m in Sources */,
 				FCA9EA5B1E37313000FF677C /* 管理.md in Sources */,
 				FCA9EA4B1E37312F00FF677C /* MasonryCaseVC.m in Sources */,
@@ -936,12 +983,15 @@
 				FCA9EA5C1E37313000FF677C /* 经验.md in Sources */,
 				FCA9EA291E37312F00FF677C /* SDGuideViewController.m in Sources */,
 				FCA9EA231E37312F00FF677C /* FourVC.m in Sources */,
+				759DDABE1E40410400175959 /* README.md in Sources */,
 				FCA9EA591E37313000FF677C /* 文章.md in Sources */,
 				751707CC1B4620F6007F1AE2 /* main.m in Sources */,
+				759DDADE1E4706FF00175959 /* Test2ViewController.m in Sources */,
 				FCA9EA511E37312F00FF677C /* UITableViewCaseVC.m in Sources */,
 				FCA9EA0F1E37312F00FF677C /* UIColor+SDCategory.m in Sources */,
 				FCA9EA091E37312F00FF677C /* CellModel.m in Sources */,
 				FCA9EA331E37312F00FF677C /* SDCache.m in Sources */,
+				759DDAC71E40C91100175959 /* TestViewController.m in Sources */,
 				FCA9EA1A1E37312F00FF677C /* FeedBackVC.m in Sources */,
 				FCA9EA141E37312F00FF677C /* UIView+SDCategory.m in Sources */,
 				FCA9EA111E37312F00FF677C /* UIImageView+SDCategory.m in Sources */,

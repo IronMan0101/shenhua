@@ -32,7 +32,7 @@
 #define WeakSelf(weakSelf)      __weak __typeof(&*self)weakSelf = self;    //获取弱引用self
 #define DEGREES_TO_RADIANS(d)  ((d) * M_PI / 180.0)
 #define RADIANS_TO_DEGREES(r)  ((d) * 180.0 / M_PI)
-
+#define ScaleDesgin_FromiPhone5(_X_) (_X_ * (SCREEN_WIDTH/320))            //给出5的尺寸 自动缩放到其他屏幕的尺寸
 
 
 

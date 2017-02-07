@@ -82,8 +82,10 @@
 - (void)sd_removeViewWithTag:(NSInteger)tag;
 ////打印frame的大小
 -(void)sd_logFrame:(NSString *)tip;
-//加载xib
-+ (id)sd_loadNib:(NSString*)nibName;
+// 加载Xib
++ (id)sd_loadNib;
+// 加载Xib
++ (id)sd_loadNibName:(NSString*)nibName;
 //添加圆角、边框
 -(void)sd_addCornerRadiusBorder:(CGFloat)cornerRadius  borderWidth:(CGFloat)borderWidth   borderColor:(UIColor*)borderColor;
 //加圆角

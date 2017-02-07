@@ -173,22 +173,17 @@
 
 
 // 加载Xib
-+ (id)sd_loadNib:(NSString*)nibName
++ (id)sd_loadNib
 {
-    UIView *result = nil;
-    NSArray *views = [[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil];
-    
-    for (id object in views)
-    {
-        if ([object isKindOfClass:[self class]])  // uiview 第一层   在上面可能放其他
-        {
-            result = object;
-            break;
-        }
-    }
-    
-    //return views[0];//排序再第一个 默认
-    return result;
+//    NSArray *view=[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil];
+//    NSLog(@"view:%@",view);
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+}
+
+// 加载Xib
++ (id)sd_loadNibName:(NSString*)nibName
+{
+    return [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] lastObject];
 }
 
 //添加圆角、边框
