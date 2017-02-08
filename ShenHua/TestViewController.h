@@ -14,6 +14,13 @@
 @property(nonatomic,strong) NSMutableArray *arrayLabel;
 @property(nonatomic,strong) Person *person;
 
+
+@property(nonatomic,strong) IBOutlet UIButton *addBtn;
+@property(nonatomic,strong) IBOutlet UIButton *deleteBtn;
+@property(nonatomic,strong) IBOutlet UILabel *lbl1;
+@property(nonatomic,strong) IBOutlet UILabel *lbl2;
+@property(nonatomic,strong) IBOutlet UILabel *lbl3;
+
 -(IBAction)click1:(id)sender;
 -(IBAction)click2:(id)sender;
 

@@ -8,6 +8,7 @@
 
 #import "TestViewController.h"
 #import "CustomView.h"
+#import "Test2ViewController.h"
 
 
 @interface TestViewController ()
@@ -165,7 +166,10 @@
 
 -(IBAction)click2:(id)sender
 {
-    
+   // [self.addBtn sd_logFrame:@"self.addBtn"];
+    [self.lbl1 sd_logFrame:@"lable1"];
+    [self.lbl2 sd_logFrame:@"lable2"];
+    [self.lbl3 sd_logFrame:@"lable3"];
 }
 
 @end
