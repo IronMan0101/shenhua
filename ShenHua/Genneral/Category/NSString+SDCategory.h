@@ -42,5 +42,8 @@
 
 + (NSDictionary *)sd_JsonStringToDictionary:(NSString *)jsonString;         //JSON字符串转字典
 + (NSString*)  sd_dictionaryToJsonString:(NSDictionary *)dic;               //字典转JSON字符串
++ (NSString *) sd_fileMD5:(NSString *)filePath;                             //根据文件得到md5串
++ (NSString *) sd_base64EncodeDataToString:(NSData *)data;                  //NSData加密base64成串
++ (NSData *)   sd_base64DecodeStringToData:(NSString *)str;                 //解密base64串 成 NSData
 
 @end

@@ -24,6 +24,7 @@
 
 
 #define APP_VERSION             [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]  //App版本号
+#define IOS_VERSION             [UIDevice currentDevice] systemVersion]                                   //当前IOS版本
 #define APP_DELEGATE            ((AppDelegate *)[[UIApplication sharedApplication] delegate])             //AppDelegate
 #define IS_IPAD                 ( UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad )                    //是否为iPad
 
