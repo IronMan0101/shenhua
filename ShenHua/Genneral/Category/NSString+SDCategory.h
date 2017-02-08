@@ -39,4 +39,8 @@
 + (UIColor *)  sd_hexToColor:(NSString *)strHex;                             //把16进制RGB字符串转成UIColor务必对UIColor值为真进行判断进行判断
 + (CGFloat)    sd_getWith:(NSString *)text   font:(UIFont *)font;            //获取文本的宽度
 
+
++ (NSDictionary *)sd_JsonStringToDictionary:(NSString *)jsonString;         //JSON字符串转字典
++ (NSString*)  sd_dictionaryToJsonString:(NSDictionary *)dic;               //字典转JSON字符串
+
 @end

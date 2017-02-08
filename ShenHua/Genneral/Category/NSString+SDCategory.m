@@ -234,4 +234,47 @@
 }
 
 
+//JSON字符串转字典
++ (NSDictionary *)sd_JsonStringToDictionary:(NSString *)jsonString
+{
+    if (!jsonString)
+    {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                         
+                                                        options:NSJSONReadingMutableContainers
+                         
+                                                          error:&err];
+    if(err)
+    {
+       // NSLog(@"json解析失败：%@",err);
+        return nil;
+    }
+    return dic;
+}
+
+
+//字典转JSON字符串
++ (NSString*)sd_dictionaryToJsonString:(NSDictionary *)dic
+{
+    if(!dic)
+    {
+        return @"";
+    }
+    NSError *parseError = nil;
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
+    
+    if(!jsonData)
+    {
+        return @"";
+    }
+    
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
+
+
 @end
