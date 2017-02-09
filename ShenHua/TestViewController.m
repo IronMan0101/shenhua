@@ -25,6 +25,9 @@
     //self.arrayLabel=[[NSMutableArray alloc] initWithCapacity:10];
     NSLog(@"%s",__func__);
     
+    
+
+    
 }
 
 //- (void)loadView
@@ -132,41 +135,53 @@
 //    [self.view addSubview:view];
 //}
 
-//3.kvc和kvo使用
+////4.kvc和kvo使用
+//-(IBAction)click1:(id)sender
+//{
+//    //kvc
+//    Person *person=[[Person alloc] init];
+//    [person.dog setValue:@"旺财1" forKey:@"name"];
+//    NSLog(@"%@",person.dog.name);
+//    [person setValue:@"旺财2" forKeyPath :@"dog.name"];
+//    NSLog(@"%@",person.dog.name);
+//    NSLog(@"%@",[person valueForKeyPath:@"dog.name"]);
+//    NSLog(@"");
+//    
+//    //kvo
+//    
+//   [ self.person removeObserver:self forKeyPath:@"name" context:nil];
+//    self.person=[[Person alloc] init];
+//    
+//    
+//    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld  context:nil];
+//    
+//    self.person.name=@"zhangsan";
+//    
+//    self.person.name=@"lisi";
+//
+//
+//    
+//}
+//
+//-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+//{
+//    NSLog(@"%@,%@,%@",keyPath,object,change);
+//    NSLog(@"");
+//}
+
+
+//4.autolayout
+//https://lvwenhan.com/ios/441.html
+
 -(IBAction)click1:(id)sender
 {
-    //kvc
-    Person *person=[[Person alloc] init];
-    [person.dog setValue:@"旺财1" forKey:@"name"];
-    NSLog(@"%@",person.dog.name);
-    [person setValue:@"旺财2" forKeyPath :@"dog.name"];
-    NSLog(@"%@",person.dog.name);
-    NSLog(@"%@",[person valueForKeyPath:@"dog.name"]);
-    NSLog(@"");
-    
-    //kvo
-    self.person=[[Person alloc] init];
-    
-    
-    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld  context:nil];
-    
-    self.person.name=@"zhangsan";
-    
-    self.person.name=@"lisi";
-
-    //[person2 removeObserver:self forKeyPath:@"name" context:nil];
-    
-}
-
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
-{
-    NSLog(@"%@,%@,%@",keyPath,object,change);
-    NSLog(@"");
+    [self.lbl1 sd_logFrame:@"lable1"];
+    [self.lbl2 sd_logFrame:@"lable2"];
+    [self.lbl3 sd_logFrame:@"lable3"];
 }
 
 -(IBAction)click2:(id)sender
 {
-   // [self.addBtn sd_logFrame:@"self.addBtn"];
     [self.lbl1 sd_logFrame:@"lable1"];
     [self.lbl2 sd_logFrame:@"lable2"];
     [self.lbl3 sd_logFrame:@"lable3"];

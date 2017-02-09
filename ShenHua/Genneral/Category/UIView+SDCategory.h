@@ -92,5 +92,7 @@
 -(void)sd_addCornerRadius:(CGFloat)cornerRadius;
 //加边框
 -(void)sd_addCornerBorder:(CGFloat)borderWidth   borderColor:(UIColor*)borderColor;
+//半角边
+-(void)sd_addHalfCorner:(UIRectCorner)corners cornerRadii:(CGSize)cornerRadii  borderWidth:(CGFloat)borderWidth   borderColor:(UIColor*)borderColor;
 
 @end

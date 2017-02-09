@@ -211,6 +211,42 @@
     }
 }
 
+//半角边
+-(void)sd_addHalfCorner:(UIRectCorner)corners cornerRadii:(CGSize)cornerRadii  borderWidth:(CGFloat)borderWidth   borderColor:(UIColor*)borderColor
+{
+
+    CGRect layerFrame=self.bounds;
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:layerFrame byRoundingCorners:corners cornerRadii:cornerRadii];//圆角大小
+
+
+    //设置遮罩
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = layerFrame;
+    maskLayer.path  = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+    
+    if (borderWidth==0)
+    {
+        return;
+    }
+    
+    //设置边框
+    CAShapeLayer *borderLayer = [[CAShapeLayer alloc] init];
+
+    borderLayer.frame = layerFrame;
+    borderLayer.path  = maskPath.CGPath;
+
+    borderLayer.fillColor = [UIColor clearColor].CGColor;
+    borderLayer.lineWidth=borderWidth;
+
+    borderLayer.strokeColor = borderColor.CGColor;
+    borderLayer.strokeStart = 0.f;
+    borderLayer.strokeEnd = 1.f;
+
+
+    [self.layer addSublayer:borderLayer];
+  
+}
 
 
 

@@ -20,6 +20,9 @@
 @property(nonatomic,strong) IBOutlet UILabel *lbl1;
 @property(nonatomic,strong) IBOutlet UILabel *lbl2;
 @property(nonatomic,strong) IBOutlet UILabel *lbl3;
+@property(nonatomic,strong) IBOutlet UILabel *lbl4;
+@property(nonatomic,strong) IBOutlet UILabel *lbl5;
+@property(nonatomic,strong) IBOutlet UILabel *lbl6;
 
 -(IBAction)click1:(id)sender;
 -(IBAction)click2:(id)sender;
