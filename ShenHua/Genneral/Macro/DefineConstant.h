@@ -10,6 +10,8 @@
 #define SuningEBuy_EnumConstant_h
 
 
+
+
 //============所有刷新逻辑都走这里
 #define  TAG_FROM_FIRSTCOME        1   //首次进来
 #define  TAG_FROM_BACKGROUND       2   //从后台进来

@@ -55,8 +55,8 @@
     
    // self.window.rootViewController = guideVC;
     
-  
-    
+
+
 
    
     return YES;
@@ -126,9 +126,9 @@
                                                             @"tabbar_mine_n",@"tabbar_more_n",nil];//tabitem普通背景
     NSArray *  tabItemHighlightBg=[NSArray arrayWithObjects:@"tabbar_homepage_h", @"tabbar_merchant_h",@"tabbar_onsite_h",
                                                             @"tabbar_mine_h",@"tabbar_more_h",nil];//tabitem高亮背景
-    UIColor * tabItemFontColor=RGB(54, 185,175);                                                   //tabitem字体颜色
+    UIColor * tabItemFontColor=COLOR_RGB(54, 185,175);                                             //tabitem字体颜色
     NSString *tabBg=@"tabbar_bg";                                                                  //tabar背景图片
-    UIColor  *navBarBgColor=RGB(34, 192,173);                                                      //navbar背景颜色
+    UIColor  *navBarBgColor=COLOR_RGB(34, 192,173);                                                //navbar背景颜色
     UIColor  *navBarTitleColor=[UIColor whiteColor];                                               //navbartitle字体颜色
     UIColor  *navBarTintColor=[UIColor whiteColor];                                                //navbar左右按钮颜色
     

@@ -37,12 +37,12 @@
     [self.view addSubview:self.lbl6];
     
     
-    self.lbl1.backgroundColor=RGB(92,252,168);
-    self.lbl2.backgroundColor=RGB(252,178,37);
-    self.lbl3.backgroundColor=RGB(252,123,89);
-    self.lbl4.backgroundColor=RGB(238,133,252);
-    self.lbl5.backgroundColor=RGB(86,174,252);
-    self.lbl6.backgroundColor=RGB(252,66,33);
+    self.lbl1.backgroundColor=COLOR_RGB(92,252,168);
+    self.lbl2.backgroundColor=COLOR_RGB(252,178,37);
+    self.lbl3.backgroundColor=COLOR_RGB(252,123,89);
+    self.lbl4.backgroundColor=COLOR_RGB(238,133,252);
+    self.lbl5.backgroundColor=COLOR_RGB(86,174,252);
+    self.lbl6.backgroundColor=COLOR_RGB(252,66,33);
 
   
 
