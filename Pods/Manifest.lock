@@ -27,6 +27,7 @@ PODS:
   - CocoaLumberjack/Extensions (3.0.0):
     - CocoaLumberjack/Default
   - DACircularProgress (2.3.1)
+  - FBRetainCycleDetector (0.1.3)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -40,6 +41,8 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
+  - MLeaksFinder (0.2.1):
+    - FBRetainCycleDetector
   - NJKWebViewProgress (0.2.3):
     - NJKWebViewProgress/Core (= 0.2.3)
     - NJKWebViewProgress/ProgressView (= 0.2.3)
@@ -75,6 +78,7 @@ DEPENDENCIES:
   - MBProgressHUD
   - MJExtension
   - MJRefresh
+  - MLeaksFinder
   - NJKWebViewProgress
   - OpenUDID
   - PinYin4Objc
@@ -95,6 +99,7 @@ SPEC CHECKSUMS:
   CHTCollectionViewWaterfallLayout: 775ff73f48cfc13859b62d8bceb96e772e4a0318
   CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   GSKStretchyHeaderView: daba8f035eaade6326d05ee2a382be714bb019c0
@@ -104,6 +109,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MLeaksFinder: 0850e2f2abc7227adc4d4e2d1992b431264eb4d5
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
   PinYin4Objc: 3fa9673610368330e2dfb688b1d19a35c3930a78
@@ -118,6 +124,6 @@ SPEC CHECKSUMS:
   XYPieChart: 0efd8069d26c25d20ab74c01b5ad455f1fc48153
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: c54e313374a0478cbc48a8503720cc139d180af3
+PODFILE CHECKSUM: b1b50b7afbd3d75d07b239bd6f432752496685c8
 
 COCOAPODS: 1.1.1

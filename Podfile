@@ -12,7 +12,7 @@ target "ShenHua" do
    pod 'OpenUDID'
    pod 'WebViewJavascriptBridge'
    pod 'NJKWebViewProgress'
-   
+   pod 'MLeaksFinder'
    
    pod 'SWTableViewCell'
    pod 'MJRefresh'
