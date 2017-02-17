@@ -24,7 +24,7 @@
 #import "AboutVC.h"
 #import "LicensePageVC.h"
 #import "HubViewCaseVC.h"
-
+#import "ProductModel.h"
 
 
 
@@ -56,8 +56,7 @@
    // self.window.rootViewController = guideVC;
     
 
-
-
+    
    
     return YES;
 }

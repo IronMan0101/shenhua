@@ -21,6 +21,11 @@
 		759DDAE71E470CDB00175959 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DDAE61E470CDB00175959 /* Person.m */; };
 		759DDAEA1E470FA000175959 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DDAE91E470FA000175959 /* Dog.m */; };
 		B167EBF62991D7C480AEFD25 /* libPods-ShenHua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A55C993E31166E5D9B3031 /* libPods-ShenHua.a */; };
+		FC3566891E56DAD200CEC4AD /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3566881E56DAD200CEC4AD /* ProductModel.m */; };
+		FC35668D1E56FBBF00CEC4AD /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC35668B1E56FBBF00CEC4AD /* ProductListViewController.m */; };
+		FC35668E1E56FBBF00CEC4AD /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC35668C1E56FBBF00CEC4AD /* ProductListViewController.xib */; };
+		FC3566921E56FBD500CEC4AD /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3566901E56FBD500CEC4AD /* ProductDetailViewController.m */; };
+		FC3566931E56FBD500CEC4AD /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3566911E56FBD500CEC4AD /* ProductDetailViewController.xib */; };
 		FC5F6F611C8987390023AEAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5F6F601C8987390023AEAF /* CoreLocation.framework */; };
 		FC668B931E519BCD00610A97 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC668B911E519BCD00610A97 /* CartViewController.m */; };
 		FC668B941E519BCD00610A97 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC668B921E519BCD00610A97 /* CartViewController.xib */; };
@@ -143,6 +148,14 @@
 		759DDAE91E470FA000175959 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dog.m; path = ShenHua/Dog.m; sourceTree = SOURCE_ROOT; };
 		75D9A8901B4E966900C4CB34 /* ShenHua-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShenHua-Prefix.pch"; sourceTree = "<group>"; };
 		8614D95EDFFC612247624D9D /* Pods-ShenHua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShenHua.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShenHua/Pods-ShenHua.debug.xcconfig"; sourceTree = "<group>"; };
+		FC3566871E56DAD200CEC4AD /* ProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductModel.h; sourceTree = "<group>"; };
+		FC3566881E56DAD200CEC4AD /* ProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductModel.m; sourceTree = "<group>"; };
+		FC35668A1E56FBBF00CEC4AD /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		FC35668B1E56FBBF00CEC4AD /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		FC35668C1E56FBBF00CEC4AD /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		FC35668F1E56FBD500CEC4AD /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		FC3566901E56FBD500CEC4AD /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		FC3566911E56FBD500CEC4AD /* ProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
 		FC5F6F601C8987390023AEAF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FC668B901E519BCD00610A97 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
 		FC668B911E519BCD00610A97 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
@@ -386,6 +399,8 @@
 		FC668B8C1E519BA700610A97 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC3566871E56DAD200CEC4AD /* ProductModel.h */,
+				FC3566881E56DAD200CEC4AD /* ProductModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +418,12 @@
 				FC668B901E519BCD00610A97 /* CartViewController.h */,
 				FC668B911E519BCD00610A97 /* CartViewController.m */,
 				FC668B921E519BCD00610A97 /* CartViewController.xib */,
+				FC35668A1E56FBBF00CEC4AD /* ProductListViewController.h */,
+				FC35668B1E56FBBF00CEC4AD /* ProductListViewController.m */,
+				FC35668C1E56FBBF00CEC4AD /* ProductListViewController.xib */,
+				FC35668F1E56FBD500CEC4AD /* ProductDetailViewController.h */,
+				FC3566901E56FBD500CEC4AD /* ProductDetailViewController.m */,
+				FC3566911E56FBD500CEC4AD /* ProductDetailViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -866,6 +887,7 @@
 				FCA9EA2E1E37312F00FF677C /* ThreeVC.xib in Resources */,
 				FCA9EA5E1E37313000FF677C /* OSLicense.html in Resources */,
 				FCA9EA371E37312F00FF677C /* CustomViewCaseController.xib in Resources */,
+				FC3566931E56FBD500CEC4AD /* ProductDetailViewController.xib in Resources */,
 				FCA9EA4C1E37312F00FF677C /* MasonryCaseVC.xib in Resources */,
 				759DDAE41E47086E00175959 /* CustomView.xib in Resources */,
 				FCA9EA1B1E37312F00FF677C /* FeedBackVC.xib in Resources */,
@@ -885,6 +907,7 @@
 				759DDADF1E4706FF00175959 /* Test2ViewController.xib in Resources */,
 				FCA9EA1D1E37312F00FF677C /* LicensePageVC.xib in Resources */,
 				FCA9EA301E37312F00FF677C /* TwoVC.xib in Resources */,
+				FC35668E1E56FBBF00CEC4AD /* ProductListViewController.xib in Resources */,
 				FCA9EA281E37312F00FF677C /* LoginViewController.xib in Resources */,
 				FCA9EA471E37312F00FF677C /* autolayout4.jpg in Resources */,
 				FCA9EA3F1E37312F00FF677C /* cgf_classification_shut@2x.png in Resources */,
@@ -969,6 +992,8 @@
 				FCA9EA071E37312F00FF677C /* BaseTableViewController.m in Sources */,
 				FCA9EA081E37312F00FF677C /* BaseViewController.m in Sources */,
 				FCA9EA321E37312F00FF677C /* DBTool.m in Sources */,
+				FC3566891E56DAD200CEC4AD /* ProductModel.m in Sources */,
+				FC3566921E56FBD500CEC4AD /* ProductDetailViewController.m in Sources */,
 				FCA9EA181E37312F00FF677C /* AboutVC.m in Sources */,
 				FCA9EA5A1E37313000FF677C /* 构架.md in Sources */,
 				FCA9EA0C1E37312F00FF677C /* NSObject+SDCategory.m in Sources */,
@@ -1000,6 +1025,7 @@
 				FCA9EA0F1E37312F00FF677C /* UIColor+SDCategory.m in Sources */,
 				FCA9EA091E37312F00FF677C /* CellModel.m in Sources */,
 				FCA9EA331E37312F00FF677C /* SDCache.m in Sources */,
+				FC35668D1E56FBBF00CEC4AD /* ProductListViewController.m in Sources */,
 				759DDAC71E40C91100175959 /* TestViewController.m in Sources */,
 				FCA9EA1A1E37312F00FF677C /* FeedBackVC.m in Sources */,
 				FCA9EA141E37312F00FF677C /* UIView+SDCategory.m in Sources */,
