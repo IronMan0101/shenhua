@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ProductDetailViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *imgv2;
+@property (weak, nonatomic) IBOutlet UIImageView *imgv1;
 
 @end

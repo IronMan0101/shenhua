@@ -25,6 +25,7 @@
 #import "LicensePageVC.h"
 #import "HubViewCaseVC.h"
 #import "ProductModel.h"
+#import "ProductDetailViewController.h"
 
 
 
@@ -43,8 +44,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    self.window.rootViewController = [self creatTestController];
-    // self.window.rootViewController = [self creatMainController:0];
+    //self.window.rootViewController = [self creatTestController];
+    self.window.rootViewController = [self creatMainController:0];
      [self.window makeKeyAndVisible];
     
 //    SDGuideViewController *guideVC=[[SDGuideViewController alloc] initWithNibName:@"SDGuideViewController" bundle:nil];
@@ -86,6 +87,9 @@
 - (UIViewController *)creatTestController
 {
    TestViewController * testVC=[[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
+    
+    ProductDetailViewController * testVC2=[[ProductDetailViewController alloc] initWithNibName:@"ProductDetailViewController" bundle:nil];
+    
    // CustomViewCaseController * testVC=[[CustomViewCaseController alloc] initWithNibName:@"CustomViewCaseController" bundle:nil];
    // MasonryCaseVC * testVC=[[MasonryCaseVC alloc] initWithNibName:@"MasonryCaseVC" bundle:nil];
    // AutoLayoutCaseVC  * testVC=[[AutoLayoutCaseVC alloc] initWithNibName:@"AutoLayoutCaseVC" bundle:nil];
@@ -101,8 +105,8 @@
     
    // HubViewCaseVC* testVC=[[HubViewCaseVC alloc] initWithNibName:@"HubViewCaseVC" bundle:nil];
     
-    
-    return  testVC;
+    return testVC2;
+   // return  testVC;
 }
 
 /**

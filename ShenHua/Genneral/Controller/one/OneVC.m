@@ -48,6 +48,7 @@
          make.edges.equalTo(self.view);              //跟view一样宽高
     }];
 
+    self.automaticallyAdjustsScrollViewInsets=NO;
     
 }
 
