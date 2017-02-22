@@ -42,4 +42,23 @@
 //    return [self.viewControllers.lastObject preferredInterfaceOrientationForPresentation];
 //}
 
+
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    NSLog(@"%ld",self.viewControllers.count);
+    NSLog(@"");
+  
+//    if (self.viewControllers.count > 0)
+//    {
+//        viewController.hidesBottomBarWhenPushed = YES;
+//    }
+//    else
+//    {
+//        viewController.hidesBottomBarWhenPushed = NO;
+//    }
+//
+      [super pushViewController:viewController animated:animated];
+}
+
 @end

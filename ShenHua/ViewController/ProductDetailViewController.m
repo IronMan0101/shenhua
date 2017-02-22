@@ -10,13 +10,26 @@
 
 @interface ProductDetailViewController ()
 
+//@property(nonatomic,strong) UIImage *img;
+
 @end
+
+#define ImgURL  @"https://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/crazy_kk_2008/pic/item/b2251bfb9495778f58ee90ef.jpeg"
 
 @implementation ProductDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+//    UIButton *btn=[[UIButton  alloc] initWithFrame:CGRectMake(0, 0, 60, 44)];
+//    
+//    
+//    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+//    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+//    backItem.title = @"我没";
+//    self.navigationItem.backBarButtonItem = backItem;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -28,6 +41,8 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationSecond:) name:@"Second"object:nil];
 }
+
+
 
 -(void)viewDidDisappear:(BOOL)animated
 {
@@ -41,7 +56,10 @@
 - (IBAction)click1:(id)sender
 {
     
-    [self  sendGCD];
+    //[self  sendSwideLoad];
+    NSLog(@"%@", [self.view sd_findSubviewWithClass:[UIImageView class]]);
+    NSLog(@"1:%lf,2:%lf",self.imgv1.sd_y,self.imgv2.sd_y);
+    NSLog(@"");
 }
 
 
@@ -173,5 +191,38 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+//
+//懒加载技术
+-(void)sendSwideLoad
+{
+    self.imgv1.image=self.img;
+    
+    self.img=self.imgv1.image;
+}
+
+-(UIImage *)img   //这个是get方法。方法名如果为getImg 不是get方法。  只能重新一个get或者set
+{
+    if (!_img)
+    {
+        NSURL * url = [NSURL URLWithString:ImgURL];
+        
+        NSData * data = [[NSData alloc] initWithContentsOfURL:url];
+        
+        _img = [[UIImage alloc] initWithData:data];
+ 
+
+    }
+    return _img;
+}
+
+//
+//-(void)setImg:(UIImage *)img
+//{
+//    NSLog(@"设置");
+//}
+
+
 
 @end

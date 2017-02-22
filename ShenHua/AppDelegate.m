@@ -26,7 +26,7 @@
 #import "HubViewCaseVC.h"
 #import "ProductModel.h"
 #import "ProductDetailViewController.h"
-
+#import "ProductListViewController.h"
 
 
 
@@ -44,8 +44,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    //self.window.rootViewController = [self creatTestController];
-    self.window.rootViewController = [self creatMainController:0];
+    self.window.rootViewController = [self creatTestController];
+   // self.window.rootViewController = [self creatMainController:0];
      [self.window makeKeyAndVisible];
     
 //    SDGuideViewController *guideVC=[[SDGuideViewController alloc] initWithNibName:@"SDGuideViewController" bundle:nil];
@@ -88,7 +88,7 @@
 {
    TestViewController * testVC=[[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
     
-    ProductDetailViewController * testVC2=[[ProductDetailViewController alloc] initWithNibName:@"ProductDetailViewController" bundle:nil];
+    ProductListViewController * testVC2=[[ProductListViewController alloc] initWithNibName:@"ProductListViewController" bundle:nil];
     
    // CustomViewCaseController * testVC=[[CustomViewCaseController alloc] initWithNibName:@"CustomViewCaseController" bundle:nil];
    // MasonryCaseVC * testVC=[[MasonryCaseVC alloc] initWithNibName:@"MasonryCaseVC" bundle:nil];
@@ -104,8 +104,9 @@
     
     
    // HubViewCaseVC* testVC=[[HubViewCaseVC alloc] initWithNibName:@"HubViewCaseVC" bundle:nil];
-    
-    return testVC2;
+      BaseNavigationController *navController=[[BaseNavigationController alloc] initWithRootViewController:testVC2];
+    return navController;
+   // return testVC2;
    // return  testVC;
 }
 

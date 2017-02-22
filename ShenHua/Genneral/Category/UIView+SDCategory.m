@@ -143,6 +143,13 @@
 }
 
 
+//打印frame的大小
+-(void)sd_logFrame:(NSString *)tip
+{
+    NSLog(@"%@ -- %@",tip,NSStringFromCGRect(self.frame));
+}
+
+
 
 // 移除此view上的所有子视图
 - (void)sd_removeAllSubviews
@@ -165,11 +172,78 @@
     }
 }
 
-//打印frame的大小
--(void)sd_logFrame:(NSString *)tip
+//查找指定的view
+- (id)sd_findViewWithTag:(NSInteger)tag
 {
-    NSLog(@"%@ -- %@",tip,NSStringFromCGRect(self.frame));
+    for (UIView *view in [self subviews])
+    {
+        if (view.tag == tag)
+        {
+            return view;
+        }
+    }
+    return nil;
 }
+// 通过类名获取指定view  fg 获取系统uipageviewcontroller隐藏控件  clazz:[UIScrollView Class]
+- (id)sd_findSubviewWithClass:(Class)clazz
+{
+    UIView* resultView = nil;
+    
+    NSMutableArray* stackArray = [NSMutableArray array];
+    NSArray* subviews = self.subviews;
+    ///使用堆栈 模拟递归效果
+    while (subviews.count > 0)
+    {
+        for (UIView* subview in subviews)
+        {
+            if ([subview isKindOfClass:clazz])
+            {
+                resultView = subview;
+                break;
+            }
+            else if (subview.subviews.count > 0)
+            {
+                [stackArray addObject:subview];
+            }
+        }
+        if (resultView)
+        {
+            break;
+        }
+        if (stackArray.count > 0)
+        {
+            UIView* view = stackArray.lastObject;
+            subviews = view.subviews;
+            
+            [stackArray removeLastObject];
+        }
+        else
+        {
+            subviews = nil;
+        }
+    }
+    return resultView;
+}
+
+
+//获取ViewController  时间响应链
+- (id)sd_viewController
+{
+    UIView* next = self;
+    do {
+        UIResponder* nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]])
+        {
+            return (UIViewController*)nextResponder;
+        }
+        next = next.superview;
+        
+    } while (next);
+    
+    return nil;
+}
+
+
 
 
 // 加载Xib

@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShenHua/ViewController/ProductDetailViewController.m"
-            timestampString = "509250062.248195"
+            timestampString = "509447831.832103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "-notificationFirst:"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShenHua/ViewController/ProductDetailViewController.m"
-            timestampString = "509250062.248195"
+            timestampString = "509447831.832103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "-notificationSecond:"
             landmarkType = "7">
          </BreakpointContent>
@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShenHua/ViewController/ProductDetailViewController.m"
-            timestampString = "509253818.416907"
+            timestampString = "509447831.832103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "-sendGCD"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,12 +362,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ShenHua/ViewController/ProductDetailViewController.m"
-            timestampString = "509254744.222173"
+            timestampString = "509447831.832103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "-sendGCD"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShenHua/ViewController/ProductDetailViewController.m"
+            timestampString = "509447831.832103"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "-img"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShenHua/ViewController/ProductDetailViewController.m"
+            timestampString = "509447831.832103"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "-sendSwideLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShenHua/ViewController/ProductDetailViewController.m"
+            timestampString = "509447831.832103"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "@implementation ProductDetailViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShenHua/Genneral/Category/UIView+SDCategory.m"
+            timestampString = "509424952.400404"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "-sd_findSubviewWithClass:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

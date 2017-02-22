@@ -7,6 +7,7 @@
 //
 
 #import "ProductListViewController.h"
+#import "ProductDetailViewController.h"
 
 @interface ProductListViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,4 +45,17 @@
 }
 */
 
+- (IBAction)clickDetail:(id)sender
+{
+//    UIButton *btn=[[UIButton  alloc] initWithFrame:CGRectMake(0, 0, 60, 44)];
+//    bt
+//    self.navigationItem.backBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+//    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+//    backItem.title = @"你妹";
+//    self.navigationItem.backBarButtonItem = backItem;
+    
+    ProductDetailViewController * detailVC= [[ProductDetailViewController alloc] initWithNibName:@"ProductDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 @end

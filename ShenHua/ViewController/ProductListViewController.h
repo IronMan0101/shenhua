@@ -10,4 +10,6 @@
 
 @interface ProductListViewController : UIViewController
 
+- (IBAction)clickDetail:(id)sender;
+
 @end

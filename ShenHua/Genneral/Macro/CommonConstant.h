@@ -21,6 +21,8 @@
 #define TABBAR_HEIGHT           49                                         //UITabbBar高度
 #define LABEL_HEIGHT            21                                         //默认UILabel高度
 #define CELL_HEIGHT             44                                         //默认cell高度
+#define NAVITEM_WIDTH           60                                         //默认nav item的宽度
+#define NAVITEM_HEIGHT          44                                         //默认nav item的高度
 
 
 #define IOS7_OR_LATER           [[[UIDevice currentDevice] systemVersion] integerValue] >=7
