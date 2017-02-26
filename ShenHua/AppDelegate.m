@@ -27,6 +27,7 @@
 #import "ProductModel.h"
 #import "ProductDetailViewController.h"
 #import "ProductListViewController.h"
+#import "RunTimeViewController.h"
 
 
 
@@ -91,9 +92,9 @@
  */
 - (UIViewController *)creatTestController
 {
-   TestViewController * testVC=[[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
-    
-    ProductListViewController * testVC2=[[ProductListViewController alloc] initWithNibName:@"ProductListViewController" bundle:nil];
+//   TestViewController * testVC=[[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
+//    
+//    ProductListViewController * testVC2=[[ProductListViewController alloc] initWithNibName:@"ProductListViewController" bundle:nil];
     
    // CustomViewCaseController * testVC=[[CustomViewCaseController alloc] initWithNibName:@"CustomViewCaseController" bundle:nil];
    // MasonryCaseVC * testVC=[[MasonryCaseVC alloc] initWithNibName:@"MasonryCaseVC" bundle:nil];
@@ -107,10 +108,16 @@
     
    // LicensePageVC* testVC=[[LicensePageVC alloc] initWithNibName:@"LicensePageVC" bundle:nil];//关于开源组件页面
     
-    NSLog(@"%@",testVC);
-   // HubViewCaseVC* testVC=[[HubViewCaseVC alloc] initWithNibName:@"HubViewCaseVC" bundle:nil];
-      BaseNavigationController *navController=[[BaseNavigationController alloc] initWithRootViewController:testVC2];
-    return navController;
+//    NSLog(@"%@",testVC);
+//   // HubViewCaseVC* testVC=[[HubViewCaseVC alloc] initWithNibName:@"HubViewCaseVC" bundle:nil];
+//      BaseNavigationController *navController=[[BaseNavigationController alloc] initWithRootViewController:testVC2];
+//    return navController;
+    
+    //RunTimeCase
+    RunTimeViewController  *runTimeVC=[[RunTimeViewController alloc] initWithNibName:@"RunTimeViewController" bundle:nil];
+    
+    return runTimeVC;
+    
    // return testVC2;
    // return  testVC;
 }

@@ -76,13 +76,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ProductListTwoCell *cell=[tableView dequeueReusableCellWithIdentifier:ProductListCell_ID forIndexPath:indexPath];
+    ProductListCell *cell=[tableView dequeueReusableCellWithIdentifier:ProductListCell_ID forIndexPath:indexPath];
     
     NSLog(@"%@",cell);
     
     NSString *text= [self.arrayData objectAtIndex:[indexPath row]];
     
     cell.name=text;
+    cell.delegate=self;
   //  cell.dele
     
     return cell;
@@ -91,6 +92,7 @@
 //cell代理
 -(void)clickLike
 {
+    NSLog(@"代理啦");
     
 }
 

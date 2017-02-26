@@ -28,6 +28,11 @@
     
 }
 
-- (IBAction)clickLike:(id)sender {
+- (IBAction)clickLike:(id)sender
+{
+    if(self.delegate && [self.delegate  respondsToSelector:@selector(clickLike)])
+    {
+        [self.delegate clickLike];
+    }
 }
 @end

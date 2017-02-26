@@ -9,14 +9,17 @@
 #import <UIKit/UIKit.h>
 
 
+@protocol ProductListCellDelegate <NSObject>
 
-@protocol ProductListCellDelegate;
+-(void)clickLike;
+
+@end
 
 @interface ProductListCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *lblName;
 @property (weak, nonatomic) IBOutlet UIButton *btnLike;
-//@property (weak, nonatomic) ProductListCellDelegate delegate;
+@property (weak, nonatomic) id<ProductListCellDelegate> delegate;
 
 
 @property(nonatomic,copy) NSString *name;
@@ -27,8 +30,4 @@
 @end
 
 
-@protocol ProductListCellDelegate <NSObject>
 
--(void)clickLike;
-
-@end
