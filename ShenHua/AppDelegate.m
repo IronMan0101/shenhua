@@ -46,7 +46,12 @@
     
     self.window.rootViewController = [self creatTestController];
    // self.window.rootViewController = [self creatMainController:0];
-     [self.window makeKeyAndVisible];
+    
+    //NSLog(@"keyWindow1:%@",[UIApplication sharedApplication].keyWindow);
+    [self.window makeKeyAndVisible];
+   // NSLog(@"keyWindow2:%@",[UIApplication sharedApplication].keyWindow);
+    
+
     
 //    SDGuideViewController *guideVC=[[SDGuideViewController alloc] initWithNibName:@"SDGuideViewController" bundle:nil];
 //    guideVC.pageCount=2000;
