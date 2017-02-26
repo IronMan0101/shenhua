@@ -107,7 +107,7 @@
     
    // LicensePageVC* testVC=[[LicensePageVC alloc] initWithNibName:@"LicensePageVC" bundle:nil];//关于开源组件页面
     
-    
+    NSLog(@"%@",testVC);
    // HubViewCaseVC* testVC=[[HubViewCaseVC alloc] initWithNibName:@"HubViewCaseVC" bundle:nil];
       BaseNavigationController *navController=[[BaseNavigationController alloc] initWithRootViewController:testVC2];
     return navController;

@@ -10,7 +10,6 @@
 		751707CC1B4620F6007F1AE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 751707CB1B4620F6007F1AE2 /* main.m */; };
 		751707CF1B4620F6007F1AE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 751707CE1B4620F6007F1AE2 /* AppDelegate.m */; };
 		751707D71B4620F6007F1AE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751707D61B4620F6007F1AE2 /* Images.xcassets */; };
-		759DDABE1E40410400175959 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 759DDABD1E40410300175959 /* README.md */; };
 		759DDAC71E40C91100175959 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DDAC51E40C91100175959 /* TestViewController.m */; };
 		759DDAC81E40C91100175959 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759DDAC61E40C91100175959 /* TestViewController.xib */; };
 		759DDADE1E4706FF00175959 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 759DDADC1E4706FF00175959 /* Test2ViewController.m */; };
@@ -53,15 +52,6 @@
 		75ADAD451E626F90007D93A9 /* UITableViewCaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75ADAD171E626F90007D93A9 /* UITableViewCaseCell.xib */; };
 		75ADAD461E626F90007D93A9 /* UITableViewCaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD191E626F90007D93A9 /* UITableViewCaseVC.m */; };
 		75ADAD471E626F90007D93A9 /* UITableViewCaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75ADAD1A1E626F90007D93A9 /* UITableViewCaseVC.xib */; };
-		75ADAD4A1E626F90007D93A9 /* 备份.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD201E626F90007D93A9 /* 备份.md */; };
-		75ADAD4B1E626F90007D93A9 /* 审核.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD211E626F90007D93A9 /* 审核.md */; };
-		75ADAD4C1E626F90007D93A9 /* 工作.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD221E626F90007D93A9 /* 工作.md */; };
-		75ADAD4D1E626F90007D93A9 /* 工具.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD231E626F90007D93A9 /* 工具.md */; };
-		75ADAD4E1E626F90007D93A9 /* 文章.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD241E626F90007D93A9 /* 文章.md */; };
-		75ADAD4F1E626F90007D93A9 /* 构架.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD251E626F90007D93A9 /* 构架.md */; };
-		75ADAD501E626F90007D93A9 /* 管理.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD261E626F90007D93A9 /* 管理.md */; };
-		75ADAD511E626F90007D93A9 /* 经验.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD271E626F90007D93A9 /* 经验.md */; };
-		75ADAD521E626F90007D93A9 /* 逆向.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ADAD281E626F90007D93A9 /* 逆向.md */; };
 		B167EBF62991D7C480AEFD25 /* libPods-ShenHua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A55C993E31166E5D9B3031 /* libPods-ShenHua.a */; };
 		FC3566891E56DAD200CEC4AD /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3566881E56DAD200CEC4AD /* ProductModel.m */; };
 		FC35668D1E56FBBF00CEC4AD /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC35668B1E56FBBF00CEC4AD /* ProductListViewController.m */; };
@@ -1023,7 +1013,6 @@
 				FCA9EA051E37312F00FF677C /* BaseNavigationController.m in Sources */,
 				FCA9EA601E37313000FF677C /* Tool.m in Sources */,
 				FCA9EA121E37312F00FF677C /* UILabel+SDCategory.m in Sources */,
-				75ADAD501E626F90007D93A9 /* 管理.md in Sources */,
 				751707CF1B4620F6007F1AE2 /* AppDelegate.m in Sources */,
 				759DDAEA1E470FA000175959 /* Dog.m in Sources */,
 				FCA9EA071E37312F00FF677C /* BaseTableViewController.m in Sources */,
@@ -1031,30 +1020,23 @@
 				FCA9EA321E37312F00FF677C /* DBTool.m in Sources */,
 				FC3566891E56DAD200CEC4AD /* ProductModel.m in Sources */,
 				FC3566921E56FBD500CEC4AD /* ProductDetailViewController.m in Sources */,
-				75ADAD4A1E626F90007D93A9 /* 备份.md in Sources */,
 				75ADAD441E626F90007D93A9 /* UITableViewCaseCell.m in Sources */,
 				FCA9EA181E37312F00FF677C /* AboutVC.m in Sources */,
-				75ADAD4B1E626F90007D93A9 /* 审核.md in Sources */,
 				FCA9EA0C1E37312F00FF677C /* NSObject+SDCategory.m in Sources */,
 				FCA9EA101E37312F00FF677C /* UIImage+SDCategory.m in Sources */,
 				FCA9EA1E1E37312F00FF677C /* FiveVC.m in Sources */,
 				759DDAE21E47085F00175959 /* CustomView.m in Sources */,
 				FCA9EA0E1E37312F00FF677C /* UIButton+SDCategory.m in Sources */,
-				75ADAD4F1E626F90007D93A9 /* 构架.md in Sources */,
 				FCA9EA5F1E37313000FF677C /* Store.m in Sources */,
-				75ADAD4D1E626F90007D93A9 /* 工具.md in Sources */,
 				75ADAD3D1E626F90007D93A9 /* AutoLayoutCaseVC.m in Sources */,
 				75ADAD361E626F90007D93A9 /* HubViewCaseVC.m in Sources */,
 				75ADAD291E626F90007D93A9 /* AnimCaseVC.m in Sources */,
 				75ADAD2D1E626F90007D93A9 /* CutomViewCase1.m in Sources */,
-				75ADAD4E1E626F90007D93A9 /* 文章.md in Sources */,
 				FCA9EA161E37312F00FF677C /* UIWebView+SDCategory.m in Sources */,
 				FCA9EA0A1E37312F00FF677C /* Toast.m in Sources */,
 				FCA9EA131E37312F00FF677C /* UITextField+SDCategory.m in Sources */,
 				FCA9EA251E37312F00FF677C /* Command.m in Sources */,
 				FCA9EA261E37312F00FF677C /* LocateCityCommand.m in Sources */,
-				75ADAD4C1E626F90007D93A9 /* 工作.md in Sources */,
-				75ADAD511E626F90007D93A9 /* 经验.md in Sources */,
 				FCA9EA151E37312F00FF677C /* UIViewController+SDCategory.m in Sources */,
 				75ADAD461E626F90007D93A9 /* UITableViewCaseVC.m in Sources */,
 				FCA9EA0B1E37312F00FF677C /* NSData+SDCategory.m in Sources */,
@@ -1062,7 +1044,6 @@
 				75ADAD401E626F90007D93A9 /* MasonryCaseVC.m in Sources */,
 				FCA9EA291E37312F00FF677C /* SDGuideViewController.m in Sources */,
 				FCA9EA231E37312F00FF677C /* FourVC.m in Sources */,
-				759DDABE1E40410400175959 /* README.md in Sources */,
 				751707CC1B4620F6007F1AE2 /* main.m in Sources */,
 				759DDADE1E4706FF00175959 /* Test2ViewController.m in Sources */,
 				75ADAD2B1E626F90007D93A9 /* CustomViewCaseController.m in Sources */,
@@ -1076,7 +1057,6 @@
 				FCA9EA141E37312F00FF677C /* UIView+SDCategory.m in Sources */,
 				FC668B931E519BCD00610A97 /* CartViewController.m in Sources */,
 				FCA9EA111E37312F00FF677C /* UIImageView+SDCategory.m in Sources */,
-				75ADAD521E626F90007D93A9 /* 逆向.md in Sources */,
 				75ADAD2F1E626F90007D93A9 /* BCScrollView.m in Sources */,
 				FCA9EA1C1E37312F00FF677C /* LicensePageVC.m in Sources */,
 				FCA9EA271E37312F00FF677C /* LoginViewController.m in Sources */,
@@ -1185,10 +1165,7 @@
 				INFOPLIST_FILE = ShenHua/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ShenHua/Network",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lgfz.fanhuanwang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
@@ -1208,10 +1185,7 @@
 				INFOPLIST_FILE = ShenHua/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ShenHua/Network",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lgfz.fanhuanwang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";

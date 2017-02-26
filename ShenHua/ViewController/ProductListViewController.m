@@ -32,7 +32,7 @@
     //self.tableView.allowsSelectionDuringEditing=YES;//编辑模式下单选
     //[self.tableView setEditing:YES animated:YES];
     //self.tableView.isEditing
-    NSLog(@"是否可编辑:%lu",self.tableView.isEditing);
+   // NSLog(@"是否可编辑:%lu",self.tableView.isEditing);
     
 //    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.size.mas_equalTo(self.view);
@@ -88,7 +88,11 @@
     return cell;
 }
 
-
+//cell代理
+-(void)clickLike
+{
+    
+}
 
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

@@ -43,7 +43,7 @@
     
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-    hud.labelText = message;
+    //hud.labelText = message;
     
     // 隐藏时候从父控件中移除
     hud.removeFromSuperViewOnHide = YES;
@@ -101,7 +101,7 @@
     
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-    hud.labelText = message;
+   // hud.labelText = message;
     
     // 设置图片
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:icon]];
@@ -113,7 +113,7 @@
     hud.removeFromSuperViewOnHide = YES;
     
     // 0.9秒之后再消失
-    [hud hide:YES afterDelay:delay];
+    //[hud hide:YES afterDelay:delay];
 }
 
 
