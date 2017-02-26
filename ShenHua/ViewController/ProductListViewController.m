@@ -83,7 +83,7 @@
     NSString *text= [self.arrayData objectAtIndex:[indexPath row]];
     
     cell.name=text;
-    cell.dele
+  //  cell.dele
     
     return cell;
 }

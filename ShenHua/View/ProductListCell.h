@@ -16,7 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblName;
 @property (weak, nonatomic) IBOutlet UIButton *btnLike;
-@property (weak, nonatomic) ProductListCellDelegate delegate;
+//@property (weak, nonatomic) ProductListCellDelegate delegate;
 
 
 @property(nonatomic,copy) NSString *name;
