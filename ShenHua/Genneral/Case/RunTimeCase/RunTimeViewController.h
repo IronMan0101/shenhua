@@ -10,4 +10,8 @@
 
 @interface RunTimeViewController : UIViewController
 
+@property(nonatomic,copy,nullable) NSString *name1;
+@property(nonatomic,copy,nonnull) NSString *name2;
+@property(nonatomic,copy,null_resettable) NSString *name3;
+
 @end

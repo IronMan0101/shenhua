@@ -10,4 +10,7 @@
 
 @interface UIButton (SDCategory)
 
+
+@property NSString *type;
+-(void)setMaxTitle;
 @end

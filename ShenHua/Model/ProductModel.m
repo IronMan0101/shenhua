@@ -7,6 +7,7 @@
 //
 
 #import "ProductModel.h"
+#import <objc/message.h>
 
 @implementation ProductModel
 
@@ -69,5 +70,45 @@
     NSLog(@"title1:%@  title2:%@",productModel1.title,productModel2.title);
     NSLog(@"");
 }
+
+-(void)log
+{
+    NSLog(@"test log...");
+}
+
+-(void)log:(NSString *)text
+{
+    NSLog(@"%@",text);
+}
+
+void addMethod(id self,SEL _cmd)
+{
+    NSLog(@"isSaleOut");
+}
+
+void addMethodText(id self,SEL _cmd,NSString *text)
+{
+    NSLog(@"isSaleOut:%@",text);
+}
++(BOOL)resolveInstanceMethod:(SEL)sel
+{
+    NSLog(@"resolveInstanceMethod::%@",NSStringFromSelector(sel));
+    if (sel==NSSelectorFromString(@"isSaleOut"))
+    {
+        class_addMethod(self, sel,(IMP)addMethod, "v@:");
+        return YES;
+        
+    }else if (sel==NSSelectorFromString(@"isSaleOut:"))
+    {
+        
+        class_addMethod(self, sel,(IMP)addMethodText, "v@:*");
+        
+        return YES;
+    }
+    return [super resolveInstanceMethod:sel];
+}
+
+
+
 
 @end

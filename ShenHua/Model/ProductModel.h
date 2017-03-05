@@ -13,5 +13,11 @@
 
 @property(nonatomic,copy) NSString *title;//产品标题
 @property(nonatomic,copy) NSString *image;//产品图片
+@property  NSString * oldPrice;
+
+-(void)log;
+-(void)log:(NSString *)text;
+
+
 
 @end
