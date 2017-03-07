@@ -45,8 +45,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    self.window.rootViewController = [self creatTestController];
-   // self.window.rootViewController = [self creatMainController:0];
+    //self.window.rootViewController = [self creatTestController];
+   self.window.rootViewController = [self creatMainController:0];
     
     //NSLog(@"keyWindow1:%@",[UIApplication sharedApplication].keyWindow);
     [self.window makeKeyAndVisible];

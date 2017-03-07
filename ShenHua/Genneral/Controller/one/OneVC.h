@@ -11,5 +11,6 @@
 @interface OneVC : BaseViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,copy) NSMutableArray *list;
+@property(nonatomic,strong) UITableView *tableView;
 
 @end

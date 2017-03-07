@@ -29,12 +29,20 @@
 
 +(void)load
 {
-    Method  methodOld=  class_getClassMethod(self, @selector(setTitle:forState:));
-    Method  methodNew=  class_getClassMethod(self, @selector(setMaxTitle));
-    method_exchangeImplementations(methodNew, methodOld);
+ //   class_getInstanceMethod  -   class_getClassMethod  +
+    
+    Method  methodOld=  class_getInstanceMethod([self class], @selector(setTitle:forState:));//--
+    Method  methodNew=  class_getInstanceMethod(self, @selector(setMaxTitle));
+    method_exchangeImplementations(methodOld, methodNew);
 }
 
 -(void)setMaxTitle
+{
+    NSLog(@"max title");
+}
+
+
+-(void)setSmallTitle
 {
     NSLog(@"max title");
 }

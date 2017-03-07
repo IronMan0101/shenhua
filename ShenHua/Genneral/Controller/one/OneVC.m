@@ -20,20 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UITableView * tableView=[[UITableView alloc]init];
-    tableView.delegate=self;
-    tableView.dataSource=self;
+    self.tableView=[[UITableView alloc]  init];
+    self.tableView.delegate=self;
+    self.tableView.dataSource=self;
     
-    tableView.backgroundColor=[UIColor redColor];
+    self.tableView.backgroundColor=[UIColor redColor];
     
-    [self.view addSubview:tableView];
+    [self.view addSubview:self.tableView];
     _list=[[NSMutableArray alloc]initWithCapacity:100];
     
-    [self.list addObject:@"支付宝"];
+
     
     for (NSInteger i=0; i<100; i++)
     {
-         [self.list addObject:@"支付宝"];
+        NSString *str=[NSString stringWithFormat:@"%ld",i];
+        [self.list addObject:str];
     }
     
     
@@ -43,13 +44,40 @@
     
     
     //制作约束
-    [tableView mas_makeConstraints:^(MASConstraintMaker *make)
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make)
      {
          make.edges.equalTo(self.view);              //跟view一样宽高
     }];
 
-    self.automaticallyAdjustsScrollViewInsets=NO;
+//   self.automaticallyAdjustsScrollViewInsets=NO;//当vc 的第一个subview为scrollview自动调整内边距
+//   self.tableView.frame= CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64-49);
+//   self.tableView.frame= CGRectMake(0, 64, SCREEN_WIDTH, self.view.sd_height-49);
     
+    //view      -- {{0, 0}, {320, 519}}
+    //tableView -- {{0, 64}, {320, 455}}
+    //这个时候scrollview就穿透导航条
+    
+    
+    self.automaticallyAdjustsScrollViewInsets=YES;//当vc 的第一个subview为scrollview自动调整内边距
+    //view      -- {{0, 0}, {320, 519}}
+    //tableView -- {{0, 0}, {320, 519}}
+    
+    self.tableView.contentOffset=CGPointMake(0, 200);
+    NSLog(@"UIEdgeInsets::%@",NSStringFromUIEdgeInsets(self.tableView.contentInset));//{64, 0, 0, 0}
+    NSLog(@"contentOffset::%lf", self.tableView.contentOffset.y);//0
+    NSLog(@"");
+}
+
+-(void)viewDidLayoutSubviews
+{
+    [self.view sd_logFrame:@"view"];                             //{{0, 0}, {320, 519}}
+    [self.tableView sd_logFrame:@"tableView"];                   //{{0, 0}, {320, 519}}
+    NSLog(@"UIEdgeInsets::%@",NSStringFromUIEdgeInsets(self.tableView.contentInset));//{64, 0, 0, 0}
+    NSLog(@"contentOffset::%lf", self.tableView.contentOffset.y);//-64.000000
+    self.tableView.contentOffset=CGPointMake(0, 0);
+   
+   
+    NSLog(@"");
 }
 
 - (void)didReceiveMemoryWarning {
