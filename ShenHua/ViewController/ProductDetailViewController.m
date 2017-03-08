@@ -52,6 +52,19 @@
 }
 
 
+-(void)viewDidLayoutSubviews
+{
+    NSLog(@"%s",__func__);
+    
+    NSLog(@"self.navigationItem:%@",self.navigationItem);
+    NSLog(@"self.navigationItem.titleView:%@",self.navigationItem.titleView);
+    NSLog(@"self.navigationItem.backBarButtonItem:%@",self.navigationItem.backBarButtonItem);
+    NSLog(@"self.navigationItem.leftBarButtonItem:%@",self.navigationItem.leftBarButtonItem);
+    
+    //self.tableView.frame=[self.view sd_setY:64];
+}
+
+
 
 - (IBAction)click1:(id)sender
 {

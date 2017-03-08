@@ -8,6 +8,7 @@
 
 #import "OneVC.h"
 #import "CacheManager.h"
+#import "ProductDetailViewController.h"
 
 @interface OneVC ()
 
@@ -58,14 +59,14 @@
     //这个时候scrollview就穿透导航条
     
     
-    self.automaticallyAdjustsScrollViewInsets=YES;//当vc 的第一个subview为scrollview自动调整内边距
-    //view      -- {{0, 0}, {320, 519}}
-    //tableView -- {{0, 0}, {320, 519}}
-    
-    self.tableView.contentOffset=CGPointMake(0, 200);
-    NSLog(@"UIEdgeInsets::%@",NSStringFromUIEdgeInsets(self.tableView.contentInset));//{64, 0, 0, 0}
-    NSLog(@"contentOffset::%lf", self.tableView.contentOffset.y);//0
-    NSLog(@"");
+      self.automaticallyAdjustsScrollViewInsets=YES;//当vc 的第一个subview为scrollview自动调整内边距
+//    //view      -- {{0, 0}, {320, 519}}
+//    //tableView -- {{0, 0}, {320, 519}}
+//    
+//    self.tableView.contentOffset=CGPointMake(0, 200);
+//    NSLog(@"UIEdgeInsets::%@",NSStringFromUIEdgeInsets(self.tableView.contentInset));//{64, 0, 0, 0}
+//    NSLog(@"contentOffset::%lf", self.tableView.contentOffset.y);//0
+//    NSLog(@"");
 }
 
 -(void)viewDidLayoutSubviews
@@ -74,7 +75,7 @@
     [self.tableView sd_logFrame:@"tableView"];                   //{{0, 0}, {320, 519}}
     NSLog(@"UIEdgeInsets::%@",NSStringFromUIEdgeInsets(self.tableView.contentInset));//{64, 0, 0, 0}
     NSLog(@"contentOffset::%lf", self.tableView.contentOffset.y);//-64.000000
-    self.tableView.contentOffset=CGPointMake(0, 0);
+ 
    
    
     NSLog(@"");
@@ -123,6 +124,13 @@
     return cell;
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ProductDetailViewController * runVC=[[ProductDetailViewController alloc] initWithNibName:@"ProductDetailViewController" bundle:nil];
+    runVC.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:runVC animated:YES];
+}
 
 
 @end

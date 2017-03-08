@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
    
-    self.tableView= [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView= [[UITableView alloc] init];
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     
@@ -34,12 +34,15 @@
     //self.tableView.isEditing
    // NSLog(@"是否可编辑:%lu",self.tableView.isEditing);
     
-//    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.size.mas_equalTo(self.view);
-//    }];
+
     
  
    [self.view addSubview:self.tableView];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(self.view);
+    }];
+    
     
     self.arrayData=[[NSMutableArray alloc] initWithCapacity:10];
     
@@ -51,8 +54,16 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"ProductListCell" bundle:nil] forCellReuseIdentifier:ProductListCell_ID];
     
+    self.automaticallyAdjustsScrollViewInsets=YES;
+    
   //  [self.tableView registerClass:[ProductListTwoCell class] forCellReuseIdentifier:ProductListCell_ID];
     
+//    //制作约束
+//    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make)
+//     {
+//         make.edges.equalTo(self.view);              //跟view一样宽高
+//     }];
+//    
 
 }
 
@@ -60,7 +71,12 @@
 {
     NSLog(@"%s",__func__);
     
-    self.tableView.frame=self.view.bounds;
+    NSLog(@"self.navigationItem:%@",self.navigationItem);
+    NSLog(@"self.navigationItem.titleView:%@",self.navigationItem.titleView);
+    NSLog(@"self.navigationItem.backBarButtonItem:%@",self.navigationItem.backBarButtonItem);
+    NSLog(@"self.navigationItem.leftBarButtonItem:%@",self.navigationItem.leftBarButtonItem);
+    
+    //self.tableView.frame=[self.view sd_setY:64];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -78,7 +94,7 @@
 {
     ProductListCell *cell=[tableView dequeueReusableCellWithIdentifier:ProductListCell_ID forIndexPath:indexPath];
     
-    NSLog(@"%@",cell);
+  //  NSLog(@"%@",cell);
     
     NSString *text= [self.arrayData objectAtIndex:[indexPath row]];
     
@@ -109,9 +125,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%s",__func__);
     
+    NSLog(@"%s",__func__);
+    ProductDetailViewController * runVC=[[ProductDetailViewController alloc] initWithNibName:@"ProductDetailViewController" bundle:nil];
+    runVC.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:runVC animated:YES];
 }
+
+
+
+
 //默认显示的删除,但是标题可以改。 设置更多的滑块，执行方法也不再这里了
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {

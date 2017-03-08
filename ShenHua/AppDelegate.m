@@ -45,8 +45,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    //self.window.rootViewController = [self creatTestController];
-   self.window.rootViewController = [self creatMainController:0];
+    // self.window.rootViewController = [self creatTestController];
+    self.window.rootViewController = [self creatMainController:0];
     
     //NSLog(@"keyWindow1:%@",[UIApplication sharedApplication].keyWindow);
     [self.window makeKeyAndVisible];
@@ -128,7 +128,7 @@
 
 - (UIViewController *)creatMainController:(NSInteger)tabClickIndex
 {
-    OneVC   * oneVc= [[OneVC alloc]initWithNibName:@"OneVC" bundle:nil];
+    ProductListViewController   * oneVc= [[ProductListViewController alloc]initWithNibName:@"ProductListViewController" bundle:nil];
     TwoVC   * twoVc= [[TwoVC alloc]initWithNibName:@"TwoVC" bundle:nil];
     ThreeVC * threeVc= [[ThreeVC alloc]initWithNibName:@"ThreeVC" bundle:nil];
     FourVC  * fourVc= [[FourVC alloc]initWithNibName:@"FourVC" bundle:nil];
