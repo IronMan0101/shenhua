@@ -28,7 +28,7 @@
 #import "ProductDetailViewController.h"
 #import "ProductListViewController.h"
 #import "RunTimeViewController.h"
-
+#import "MineViewController.h"
 
 
 @interface AppDelegate ()
@@ -132,9 +132,11 @@
     TwoVC   * twoVc= [[TwoVC alloc]initWithNibName:@"TwoVC" bundle:nil];
     ThreeVC * threeVc= [[ThreeVC alloc]initWithNibName:@"ThreeVC" bundle:nil];
     FourVC  * fourVc= [[FourVC alloc]initWithNibName:@"FourVC" bundle:nil];
-    FiveVC  * fiveVc= [[FiveVC alloc]initWithNibName:@"FiveVC" bundle:nil];
+    MineViewController  * fiveVc= [[MineViewController alloc]initWithNibName:@"MineViewController" bundle:nil];
     
-    NSArray *  viewControllers=[NSArray arrayWithObjects:oneVc, twoVc,threeVc,fourVc,fiveVc,nil];
+    //NSArray *  viewControllers=[NSArray arrayWithObjects:oneVc, twoVc,threeVc,fourVc,fiveVc,nil];
+    
+    NSArray *  viewControllers=[NSArray arrayWithObjects:fiveVc, twoVc,threeVc,fourVc,oneVc,nil];
     
 
     NSArray *  tabItemTitle=[NSArray arrayWithObjects:@"团购", @"上门",@"商家",@"我的",@"更多",nil];   //tabitem标题
@@ -174,9 +176,9 @@
     }
     
     //设置NavigationBar背景颜色与字体
-    [[UINavigationBar appearance] setBarTintColor:navBarBgColor];
-    [[UINavigationBar appearance] setTintColor:navBarTintColor] ;//设置navigationbar上左右按钮字体颜色
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:navBarTitleColor}];
+    //[[UINavigationBar appearance] setBarTintColor:navBarBgColor];
+    //[[UINavigationBar appearance] setTintColor:navBarTintColor] ;//设置navigationbar上左右按钮字体颜色
+   // [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:navBarTitleColor}];
     
     
      //设置tabbarItem背景颜色与字体

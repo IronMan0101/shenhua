@@ -65,6 +65,8 @@
 		75ADADBB1E62BD05007D93A9 /* RunTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75ADADB91E62BD05007D93A9 /* RunTimeViewController.xib */; };
 		75ADADC01E6319E8007D93A9 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADADBE1E6319E8007D93A9 /* WebViewController.m */; };
 		75ADADC11E6319E8007D93A9 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75ADADBF1E6319E8007D93A9 /* WebViewController.xib */; };
+		75BB35271E73986C0024DB7D /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BB35251E73986C0024DB7D /* MineViewController.m */; };
+		75BB35281E73986C0024DB7D /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75BB35261E73986C0024DB7D /* MineViewController.xib */; };
 		B167EBF62991D7C480AEFD25 /* libPods-ShenHua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A55C993E31166E5D9B3031 /* libPods-ShenHua.a */; };
 		FC3566891E56DAD200CEC4AD /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3566881E56DAD200CEC4AD /* ProductModel.m */; };
 		FC35668D1E56FBBF00CEC4AD /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC35668B1E56FBBF00CEC4AD /* ProductListViewController.m */; };
@@ -211,6 +213,9 @@
 		75ADADBD1E6319E8007D93A9 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		75ADADBE1E6319E8007D93A9 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		75ADADBF1E6319E8007D93A9 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		75BB35241E73986C0024DB7D /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		75BB35251E73986C0024DB7D /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		75BB35261E73986C0024DB7D /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		75D9A8901B4E966900C4CB34 /* ShenHua-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShenHua-Prefix.pch"; sourceTree = "<group>"; };
 		8614D95EDFFC612247624D9D /* Pods-ShenHua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShenHua.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShenHua/Pods-ShenHua.debug.xcconfig"; sourceTree = "<group>"; };
 		FC3566871E56DAD200CEC4AD /* ProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductModel.h; sourceTree = "<group>"; };
@@ -587,6 +592,9 @@
 				FC35668F1E56FBD500CEC4AD /* ProductDetailViewController.h */,
 				FC3566901E56FBD500CEC4AD /* ProductDetailViewController.m */,
 				FC3566911E56FBD500CEC4AD /* ProductDetailViewController.xib */,
+				75BB35241E73986C0024DB7D /* MineViewController.h */,
+				75BB35251E73986C0024DB7D /* MineViewController.m */,
+				75BB35261E73986C0024DB7D /* MineViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -955,6 +963,7 @@
 				FC3566931E56FBD500CEC4AD /* ProductDetailViewController.xib in Resources */,
 				75ADADAB1E6282C5007D93A9 /* UITableViewCaseCell.xib in Resources */,
 				75ADADC11E6319E8007D93A9 /* WebViewController.xib in Resources */,
+				75BB35281E73986C0024DB7D /* MineViewController.xib in Resources */,
 				75ADAD941E6282C5007D93A9 /* CutomViewCase1.xib in Resources */,
 				75ADAD961E6282C5007D93A9 /* cgf_classification_line@2x.png in Resources */,
 				75ADADBB1E62BD05007D93A9 /* RunTimeViewController.xib in Resources */,
@@ -1063,6 +1072,7 @@
 				FC3566891E56DAD200CEC4AD /* ProductModel.m in Sources */,
 				75ADADB31E6282C5007D93A9 /* 构架.md in Sources */,
 				FC3566921E56FBD500CEC4AD /* ProductDetailViewController.m in Sources */,
+				75BB35271E73986C0024DB7D /* MineViewController.m in Sources */,
 				75ADADA81E6282C5007D93A9 /* UICollectionViewVC.m in Sources */,
 				FCA9EA181E37312F00FF677C /* AboutVC.m in Sources */,
 				FCA9EA0C1E37312F00FF677C /* NSObject+SDCategory.m in Sources */,

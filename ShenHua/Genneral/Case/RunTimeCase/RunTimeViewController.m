@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view from its nib.
     self.name1=nil;
     NSLog(@"%@",self.name1);
-    self.name2=NULL;
+    //self.name2=NULL;
     NSLog(@"%@",self.name2);
     
    // UILabel * lbl=

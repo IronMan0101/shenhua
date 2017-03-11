@@ -11,6 +11,8 @@
 
 @protocol ProductListCellDelegate <NSObject>
 
+@optional
+
 -(void)clickLike;
 
 @end

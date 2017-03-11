@@ -63,6 +63,14 @@
 //     {
 //         make.edges.equalTo(self.view);              //跟view一样宽高
 //     }];
+    
+    UIButton *btn=[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 600, 44)];
+    btn.backgroundColor=[UIColor redColor];
+    UIBarButtonItem *leftBarItem=[[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+    self.navigationItem.leftBarButtonItem=leftBarItem;
+    NSLog(@"%@", self.navigationItem.leftBarButtonItem);
+    NSLog(@"");
 //    
 
 }
@@ -70,11 +78,11 @@
 -(void)viewDidLayoutSubviews
 {
     NSLog(@"%s",__func__);
-    
-    NSLog(@"self.navigationItem:%@",self.navigationItem);
-    NSLog(@"self.navigationItem.titleView:%@",self.navigationItem.titleView);
-    NSLog(@"self.navigationItem.backBarButtonItem:%@",self.navigationItem.backBarButtonItem);
-    NSLog(@"self.navigationItem.leftBarButtonItem:%@",self.navigationItem.leftBarButtonItem);
+     NSLog(@"self.navigationItem:%@",self.navigationController.navigationBar);
+    NSLog(@"self.navigationItem:%@",self.navigationController.navigationItem);
+    NSLog(@"self.navigationItem.titleView:%@",self.navigationController.navigationItem.titleView);
+    NSLog(@"self.navigationItem.backBarButtonItem:%@",self.navigationController.navigationItem.backBarButtonItem);
+    NSLog(@"self.navigationItem.leftBarButtonItem:%@",self.navigationController.navigationItem.leftBarButtonItem);
     
     //self.tableView.frame=[self.view sd_setY:64];
 }
