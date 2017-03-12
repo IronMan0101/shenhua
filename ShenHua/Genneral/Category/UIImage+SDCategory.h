@@ -14,4 +14,7 @@
 //缩放到给定大小
 -(UIImage*)sd_scaleToSize:(CGSize)size;
 
+// 根据颜色生成一张尺寸为1*1的相同颜色图片
++ (UIImage *)sd_imageWithColor:(UIColor *)color;
+
 @end

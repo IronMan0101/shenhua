@@ -18,6 +18,7 @@
 #define SCREEN_By375(x)         ceil(x * SCREEN_RATIO_375)                 //按375的设计，进行尺寸转换 iphone 6
 #define STATUSBAR_HEIGHT        20                                         //状态栏高度
 #define NAVBAR_HEIGHT           44                                         //UINavgationbar高度
+#define NAVSTAUSBAR_HEIGHT      64                                         //UINavgationbar高度
 #define TABBAR_HEIGHT           49                                         //UITabbBar高度
 #define LABEL_HEIGHT            21                                         //默认UILabel高度
 #define CELL_HEIGHT             44                                         //默认cell高度

@@ -16,5 +16,7 @@
 
 @property(nonatomic,strong) UITableView *tableView;
 @property(nonatomic,strong) NSMutableArray *arrayData;
+@property(nonatomic,strong) UIImageView *imgvHeadView;
+@property(nonatomic,strong) UIView *stackView;
 
 @end

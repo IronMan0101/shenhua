@@ -24,4 +24,7 @@
 - (void)sd_setImageFadeWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options animateWithDuration:(CGFloat)duration;
 
 
+
+
+
 @end
