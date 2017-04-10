@@ -45,7 +45,7 @@
     //self.navigationController.navigationBar.alpha=0.5;
     //只能通过设置背景
 //    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg"] forBarMetrics:UIBarMetricsDefault];
-    self.navigationItem.title=@"个人详情页";
+  //  self.navigationItem.title=@"个人详情页";
     //背景设置nil 系统自动帮你设置一张半透明的图片
     [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];

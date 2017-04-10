@@ -13,6 +13,7 @@ target "ShenHua" do
    pod 'WebViewJavascriptBridge'
    pod 'NJKWebViewProgress'
    pod 'MLeaksFinder'
+   pod 'YXViewPager', '~> 0.0.1'
    
    pod 'SWTableViewCell'
    pod 'MJRefresh'

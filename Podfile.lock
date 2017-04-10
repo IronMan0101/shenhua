@@ -61,6 +61,7 @@ PODS:
   - TTTAttributedLabel (1.13.4)
   - WebViewJavascriptBridge (6.0.0)
   - XYPieChart (0.2)
+  - YXViewPager (0.0.1)
   - ZipArchive (1.4.0)
 
 DEPENDENCIES:
@@ -91,6 +92,7 @@ DEPENDENCIES:
   - TTTAttributedLabel
   - WebViewJavascriptBridge
   - XYPieChart
+  - YXViewPager (~> 0.0.1)
   - ZipArchive
 
 SPEC CHECKSUMS:
@@ -122,8 +124,9 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   WebViewJavascriptBridge: 72392742054bf655504206b4b9574646cfe9b1e7
   XYPieChart: 0efd8069d26c25d20ab74c01b5ad455f1fc48153
+  YXViewPager: 419ec66c3deb74db0ced6ebfe25e6597ab0dfcf7
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: b1b50b7afbd3d75d07b239bd6f432752496685c8
+PODFILE CHECKSUM: 0bfb9164c90075beed3738497eb98ea81bea58f2
 
 COCOAPODS: 1.1.1
