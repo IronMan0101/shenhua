@@ -22,6 +22,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    
+    
+    
+    
 }
 
 ///**
@@ -43,12 +48,28 @@
 //}
 
 
+-(void)clickBack
+{
+    [self popViewControllerAnimated:YES];
+}
+
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     NSLog(@"%ld",self.viewControllers.count);
     NSLog(@"");
   
+    if(self.viewControllers.count > 0)
+    {
+        UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+        [btn addTarget:self action:@selector(clickBack) forControlEvents:UIControlEventTouchUpInside];
+        btn.frame=CGRectMake(0, 0, 50, 50);
+        btn.backgroundColor=[UIColor redColor];
+        UIBarButtonItem *bar=[[UIBarButtonItem alloc] initWithCustomView:btn];
+        viewController.navigationItem.leftBarButtonItem=bar;
+    }
+    
+    
 //    if (self.viewControllers.count > 0)
 //    {
 //        viewController.hidesBottomBarWhenPushed = YES;

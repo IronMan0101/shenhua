@@ -5,17 +5,19 @@ target "ShenHua" do
    pod 'SDWebImage'
    pod 'AFNetworking'
    pod 'Masonry'
-   pod 'FMDB'
+   pod 'ReactiveCocoa'
+   pod 'MJRefresh'
    pod 'MBProgressHUD'
-   pod 'Reachability'
-   pod 'TTTAttributedLabel'
-   pod 'OpenUDID'
    pod 'WebViewJavascriptBridge'
    pod 'NJKWebViewProgress'
-   pod 'MLeaksFinder'
    
+   
+   pod 'FMDB'
+   pod 'OpenUDID'
+   pod 'Reachability'
+   pod 'TTTAttributedLabel'
+   pod 'MLeaksFinder'
    pod 'SWTableViewCell'
-   pod 'MJRefresh'
    pod 'MJExtension'
    pod 'CHTCollectionViewWaterfallLayout'
    pod 'GSKStretchyHeaderView'
@@ -26,10 +28,8 @@ target "ShenHua" do
    pod 'SFHFKeychainUtils'
    pod 'CocoaLumberjack'
    pod 'PinYin4Objc'
-   pod 'RegexKitLite'
    pod 'ZipArchive'
-   pod 'JSONModel'
    pod 'SMPageControl'
-   pod 'Mantle'
+ 
 
 end

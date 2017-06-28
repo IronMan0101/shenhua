@@ -10,4 +10,10 @@
 
 @interface AnimCaseVC : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *lblText;
+
+
+- (IBAction)clickAnimi:(id)sender;
+
+
 @end

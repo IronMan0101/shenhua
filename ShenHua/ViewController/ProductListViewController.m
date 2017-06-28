@@ -33,10 +33,8 @@
     //[self.tableView setEditing:YES animated:YES];
     //self.tableView.isEditing
    // NSLog(@"是否可编辑:%lu",self.tableView.isEditing);
-    
 
     
- 
    [self.view addSubview:self.tableView];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -64,14 +62,25 @@
 //         make.edges.equalTo(self.view);              //跟view一样宽高
 //     }];
     
-    UIButton *btn=[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 600, 44)];
-    btn.backgroundColor=[UIColor redColor];
-    UIBarButtonItem *leftBarItem=[[UIBarButtonItem alloc] initWithCustomView:btn];
-    
-    self.navigationItem.leftBarButtonItem=leftBarItem;
+//    UIButton *btn=[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 600, 44)];
+//    btn.backgroundColor=[UIColor redColor];
+//    UIBarButtonItem *leftBarItem=[[UIBarButtonItem alloc] initWithCustomView:btn];
+//    
+//    self.navigationItem.leftBarButtonItem=leftBarItem;
     NSLog(@"%@", self.navigationItem.leftBarButtonItem);
     NSLog(@"");
-//    
+    
+    
+    
+    //transform
+    UIImageView *imgv=[[UIImageView alloc] initWithFrame:self.view.bounds];
+    imgv.backgroundColor= [UIColor redColor];
+    imgv.tag='a';
+    
+    [self.view bringSubviewToFront:imgv];
+    [self.view addSubview:imgv];
+    
+//
 
 }
 
@@ -113,12 +122,7 @@
     return cell;
 }
 
-//cell代理
--(void)clickLike
-{
-    NSLog(@"代理啦");
-    
-}
+
 
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -133,14 +137,32 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+//    
+//    NSLog(@"%s",__func__);
+////    ProductDetailViewController * runVC=[[ProductDetailViewController alloc] initWithNibName:@"ProductDetailViewController" bundle:nil];
+////    runVC.hidesBottomBarWhenPushed=YES;
+////    [self.navigationController pushViewController:runVC animated:YES];
+//    
+//    UIImageView *imgv=[self.view viewWithTag:'a'];
+//    imgv.transform=CGAffineTransformMakeScale(0.5, 0.5);  //相对原始缩放
+//    imgv.transform=CGAffineTransformScale(imgv.transform, 0.5, 0.5);//相对每次缩放
     
-    NSLog(@"%s",__func__);
-    ProductDetailViewController * runVC=[[ProductDetailViewController alloc] initWithNibName:@"ProductDetailViewController" bundle:nil];
-    runVC.hidesBottomBarWhenPushed=YES;
-    [self.navigationController pushViewController:runVC animated:YES];
+    ProductDetailViewController * detailVC= [[ProductDetailViewController alloc] initWithNibName:@"ProductDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:detailVC animated:YES];
+
+    
+    
 }
 
 
+//cell代理
+-(void)clickLike
+{
+    NSLog(@"代理啦");
+
+    
+    
+}
 
 
 //默认显示的删除,但是标题可以改。 设置更多的滑块，执行方法也不再这里了
@@ -221,6 +243,8 @@
     
     NSDictionary*dict=[[NSDictionary alloc]initWithObjects:@[@"keso"] forKeys:@[@"key"]];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"Second"object:@"http://www.cnblogs.com" userInfo:dict];
+    
+   dispatch_queue_create(@"woailuo", DISPATCH_QUEUE_CONCURRENT)
 }
 
 /*

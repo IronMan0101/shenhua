@@ -327,5 +327,75 @@
     return data;
 }
 
+// 是否是纯数字 [0,9]
+- (BOOL)sd_isAllNumbers
+{
+    NSCharacterSet* set = [NSCharacterSet decimalDigitCharacterSet];
+    NSCharacterSet* set2 = [NSCharacterSet characterSetWithCharactersInString:self];
+    return [set isSupersetOfSet:set2];
+}
+
+// 是否是纯英文字母 [A-Za-z]
+- (BOOL)sd_isAllLetters
+{
+    //NOTE: only English letters
+    NSCharacterSet* set = [NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"];
+    NSCharacterSet* inverted = [set invertedSet];
+    NSRange range = [self rangeOfCharacterFromSet:inverted];
+    return range.location == NSNotFound;
+}
+// 是否包含空格
+- (BOOL)sd_containsWhitespace
+{
+    NSCharacterSet* set = [NSCharacterSet whitespaceCharacterSet];
+    NSRange range = [self rangeOfCharacterFromSet:set];
+    return range.location != NSNotFound;
+}
+//判断是否为空 null
++ (BOOL)sd_isEmptyString:(NSString*)string
+{
+    if (![string isKindOfClass:[NSString class]]) {
+        return YES;
+    }
+    if (string.length == 0) {
+        return YES;
+    }
+    NSString* trimString = string.sd_trim;
+    if (trimString.length == 0) {
+        return YES;
+    }
+    NSString* lowercaseString = trimString.lowercaseString;
+    if ([lowercaseString isEqualToString:@"(null)"] || [lowercaseString isEqualToString:@"null"] || [lowercaseString isEqualToString:@"<null>"]) {
+        return YES;
+    }
+    return NO;
+}
+//判断是空格字符串
++ (BOOL)sd_isBlankString:(NSString*)string
+{
+    if (![string isKindOfClass:[NSString class]]) {
+        return YES;
+    }
+    if (string.length == 0) {
+        return YES;
+    }
+    NSString* trimString = string.sd_trim;
+    if (trimString.length == 0) {
+        return YES;
+    }
+    return NO;
+}
+
+//去掉回车 换行
+- (NSString *)sd_trimAllSpace {
+    NSString *trimed = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+    trimed = [trimed stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    trimed = [trimed stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    trimed = [trimed stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    return trimed;
+}
+
+
+
 
 @end

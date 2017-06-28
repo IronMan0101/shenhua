@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.lblText mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(20);
+        make.left.mas_equalTo(20);
+        make.width.mas_equalTo(200);
+        make.height.mas_equalTo(30);
+        
+    }];
+    
+    self.lblText.backgroundColor=[UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +42,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)clickAnimi:(id)sender
+{
+    
+}
 
 @end

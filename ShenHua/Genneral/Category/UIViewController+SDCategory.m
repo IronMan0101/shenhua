@@ -10,4 +10,21 @@
 
 @implementation UIViewController (SDCategory)
 
+//设置导航标题view
+-(void)sd_setNavTitleView:(UIView *)titleView
+{
+    self.navigationItem.titleView = titleView;
+}
+//设置导航左边view
+-(void)sd_setNavLeftView:(UIView *)leftView
+{
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftView];
+}
+//设置导航右边边view
+-(void)sd_setNavRightView:(UIView *)rightView
+{
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightView];
+}
+
+
 @end

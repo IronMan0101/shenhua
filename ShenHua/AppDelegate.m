@@ -29,6 +29,7 @@
 #import "ProductListViewController.h"
 #import "RunTimeViewController.h"
 #import "MineViewController.h"
+#import "AnimCaseVC.h"
 
 
 @interface AppDelegate ()
@@ -45,7 +46,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    // self.window.rootViewController = [self creatTestController];
+    //self.window.rootViewController = [self creatTestController];
     self.window.rootViewController = [self creatMainController:0];
     
     //NSLog(@"keyWindow1:%@",[UIApplication sharedApplication].keyWindow);
@@ -116,7 +117,11 @@
     //RunTimeCase
     RunTimeViewController  *runTimeVC=[[RunTimeViewController alloc] initWithNibName:@"RunTimeViewController" bundle:nil];
     
-    return runTimeVC;
+    //AnimCaseVC
+    AnimCaseVC  *animCaseVC=[[AnimCaseVC alloc] initWithNibName:@"AnimCaseVC" bundle:nil];
+    
+    
+    return animCaseVC;
     
    // return testVC2;
    // return  testVC;

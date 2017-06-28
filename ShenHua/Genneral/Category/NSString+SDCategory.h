@@ -30,20 +30,21 @@
 - (NSString *) sd_leftPad:(NSInteger)sum withString:(NSString *)withString;   //左边补什么
 - (NSString *) sd_leftPadWithEmtpy:(NSInteger)sum;                            //左边用空格补齐
 - (NSString *) sd_leftPadWithZero:(NSInteger)sum;                             //左边用0补齐
-
 - (NSString *) sd_md5;                                                        //生成md5
 - (NSString *) sd_encodeURLString;                                            //url编码
 - (NSString *) sd_decodeURLString;                                            //url解码
-
-
-+ (UIColor *)  sd_hexToColor:(NSString *)strHex;                             //把16进制RGB字符串转成UIColor务必对UIColor值为真进行判断进行判断
-+ (CGFloat)    sd_getWith:(NSString *)text   font:(UIFont *)font;            //获取文本的宽度
-
-
-+ (NSDictionary *)sd_JsonStringToDictionary:(NSString *)jsonString;         //JSON字符串转字典
-+ (NSString*)  sd_dictionaryToJsonString:(NSDictionary *)dic;               //字典转JSON字符串
-+ (NSString *) sd_fileMD5:(NSString *)filePath;                             //根据文件得到md5串
-+ (NSString *) sd_base64EncodeDataToString:(NSData *)data;                  //NSData加密base64成串
-+ (NSData *)   sd_base64DecodeStringToData:(NSString *)str;                 //解密base64串 成 NSData
++ (UIColor *)  sd_hexToColor:(NSString *)strHex;                              //把16进制RGB字符串转成UIColor
++ (CGFloat)    sd_getWith:(NSString *)text   font:(UIFont *)font;             //获取文本的宽度
++ (NSDictionary *)sd_JsonStringToDictionary:(NSString *)jsonString;           //JSON字符串转字典
++ (NSString*)  sd_dictionaryToJsonString:(NSDictionary *)dic;                 //字典转JSON字符串
++ (NSString *) sd_fileMD5:(NSString *)filePath;                               //根据文件得到md5串
++ (NSString *) sd_base64EncodeDataToString:(NSData *)data;                    //NSData加密base64成串
++ (NSData *)   sd_base64DecodeStringToData:(NSString *)str;                   //解密base64串 成 NSData
+- (BOOL)       sd_isAllNumbers;                                               //是否是纯数字 [0,9]
+- (BOOL)       sd_isAllLetters;                                               //是否是纯英文字母 [A-Za-z]
+- (BOOL)       sd_containsWhitespace;                                         //是否包含空格
++ (BOOL)       sd_isEmptyString:(NSString*)string;                            //判断是否为空 null
++ (BOOL)       sd_isBlankString:(NSString*)string;                            //判断是空格字符串
+- (NSString *) sd_trimAllSpace;                                               //去掉回车 换行
 
 @end
