@@ -55,13 +55,37 @@
     
 
     
-//    SDGuideViewController *guideVC=[[SDGuideViewController alloc] initWithNibName:@"SDGuideViewController" bundle:nil];
+    SDGuideViewController *guideVC=[[SDGuideViewController alloc] initWithNibName:@"SDGuideViewController" bundle:nil];
 //    guideVC.pageCount=2000;
 //    [guideVC  iniPageInfo];
   //  [self.window  addSubview:guideVC.view];
    // [guideVC showOnWindow];
     
    // self.window.rootViewController = guideVC;
+    
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    NSMutableArray *viewControllers=[NSMutableArray arrayWithArray:tabBarController.viewControllers];
+    
+   // FHWThirdViewController *threeController=[[FHWThirdViewController alloc] init];
+   // UINavigationItem * item=[[UINavigationItem alloc] init];
+    UITabBarItem *tabbarItem =[[UITabBarItem alloc] initWithTitle:@"xx" image:[UIImage imageNamed:@"tabbar_merchant_n"] selectedImage:[UIImage imageNamed:@"tabbar_merchant_h"]];
+    
+
+    
+    // threeController.view.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-TABBAR_HIGHT);
+    
+     MineViewController  * fiveVc= [[MineViewController alloc]initWithNibName:@"MineViewController" bundle:nil];
+    fiveVc.navigationItem.title=@"你妹";
+    
+    BaseNavigationController *nav=[[BaseNavigationController alloc] initWithRootViewController:fiveVc];
+    [nav setTabBarItem:tabbarItem];
+    
+
+    NSInteger index=1;
+    [viewControllers replaceObjectAtIndex:index withObject:nav];
+    [tabBarController setViewControllers:viewControllers];
+   // self.window.rootViewController=tabBarController;
     
 
     

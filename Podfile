@@ -10,6 +10,11 @@ target "ShenHua" do
    pod 'MBProgressHUD'
    pod 'WebViewJavascriptBridge'
    pod 'NJKWebViewProgress'
+<<<<<<< HEAD
+=======
+   pod 'MLeaksFinder'
+   pod 'YXViewPager', '~> 0.0.1'
+>>>>>>> origin/master
    
    
    pod 'FMDB'
