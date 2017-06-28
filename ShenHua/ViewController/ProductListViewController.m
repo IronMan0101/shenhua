@@ -244,7 +244,7 @@
     NSDictionary*dict=[[NSDictionary alloc]initWithObjects:@[@"keso"] forKeys:@[@"key"]];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"Second"object:@"http://www.cnblogs.com" userInfo:dict];
     
-   dispatch_queue_create(@"woailuo", DISPATCH_QUEUE_CONCURRENT)
+   //dispatch_queue_create(@"woailuo", DISPATCH_QUEUE_CONCURRENT)
 }
 
 /*
