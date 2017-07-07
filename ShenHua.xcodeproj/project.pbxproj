@@ -73,6 +73,7 @@
 		FC35668E1E56FBBF00CEC4AD /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC35668C1E56FBBF00CEC4AD /* ProductListViewController.xib */; };
 		FC3566921E56FBD500CEC4AD /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3566901E56FBD500CEC4AD /* ProductDetailViewController.m */; };
 		FC3566931E56FBD500CEC4AD /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3566911E56FBD500CEC4AD /* ProductDetailViewController.xib */; };
+		FC4635B31F0F209B002591D7 /* BaseScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4635B21F0F209B002591D7 /* BaseScrollView.m */; };
 		FC5F6F611C8987390023AEAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5F6F601C8987390023AEAF /* CoreLocation.framework */; };
 		FC668B931E519BCD00610A97 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC668B911E519BCD00610A97 /* CartViewController.m */; };
 		FC668B941E519BCD00610A97 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC668B921E519BCD00610A97 /* CartViewController.xib */; };
@@ -226,6 +227,8 @@
 		FC35668F1E56FBD500CEC4AD /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
 		FC3566901E56FBD500CEC4AD /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		FC3566911E56FBD500CEC4AD /* ProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
+		FC4635B11F0F209B002591D7 /* BaseScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScrollView.h; sourceTree = "<group>"; };
+		FC4635B21F0F209B002591D7 /* BaseScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollView.m; sourceTree = "<group>"; };
 		FC5F6F601C8987390023AEAF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FC668B901E519BCD00610A97 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
 		FC668B911E519BCD00610A97 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
@@ -663,6 +666,8 @@
 				FCA9E9621E37312F00FF677C /* CellModel.m */,
 				FCA9E9631E37312F00FF677C /* Toast.h */,
 				FCA9E9641E37312F00FF677C /* Toast.m */,
+				FC4635B11F0F209B002591D7 /* BaseScrollView.h */,
+				FC4635B21F0F209B002591D7 /* BaseScrollView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1110,6 +1115,7 @@
 				75ADAD951E6282C5007D93A9 /* BCScrollView.m in Sources */,
 				75ADADA61E6282C5007D93A9 /* MasonryCaseVC.m in Sources */,
 				FCA9EA141E37312F00FF677C /* UIView+SDCategory.m in Sources */,
+				FC4635B31F0F209B002591D7 /* BaseScrollView.m in Sources */,
 				75ADADBA1E62BD05007D93A9 /* RunTimeViewController.m in Sources */,
 				FC668B931E519BCD00610A97 /* CartViewController.m in Sources */,
 				75ADAD931E6282C5007D93A9 /* CutomViewCase1.m in Sources */,
