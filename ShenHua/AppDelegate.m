@@ -65,6 +65,24 @@
     
 
     
+    RACSignal * signal= [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        [subscriber sendNext:@(1)];
+        [subscriber sendCompleted];
+        
+        return nil;
+    }];
+    
+    
+    [signal  subscribeNext:^(id x) {
+       
+        NSLog(@"tesst:%ld",x);
+        NSLog(@"");
+        
+    }];
+    
+
+    
    
     return YES;
 }

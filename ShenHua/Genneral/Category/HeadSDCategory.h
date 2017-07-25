@@ -24,5 +24,7 @@
 //controller
 #import "UIViewController+SDCategory.h"
 
+#import "ReactiveCocoa.h"
+
 
 #endif
